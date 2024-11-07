@@ -168,8 +168,13 @@ vale una vez echo abrimos otra terminal y nos ponemos en escucha por un puerto, 
 nc -nvlp 443
 ```
 ahora el exploit tiene un pero por ejemplo, nos enviamos una reverse shell ésta compartirá el mismo PID del proceso que está corriendo la impresora
+
 para comprenderlo mejor voy a citar una explicacion de otro write up que lo explica fabulosamente y os dejo el enlace tambien al writeup oficial
+
+
 https://gunzf0x.github.io/pentesting/es/posts/evilcups/
+
+
 cito:
 "por ejemplo, nos enviamos una reverse shell ésta compartirá el mismo `PID` del proceso que está corriendo la impresora. De manera que, si por A, B, C motivo la mala impresora (agregada) se muere o es removida, nuestra reverse shell también morirá ya que es un proceso “child” (hijo) de ésta. Puede haber un proceso corriendo por detrás el cual elimina las impresoras no deseadas. Por tanto, nuestra reverse shell podría morir. Para sobrepasar este problema podemos crear un nuevo `PID` el cual se haga cargo del proceso de la reverse shell utilizando el comando `nohup` junto con el de la reverse shell. Por tanto, si realizamos esta secuencia de ataque para `CUPS`, se recomienda hacerlo utilizando `nohup` para crear un proceso independiente.
 
