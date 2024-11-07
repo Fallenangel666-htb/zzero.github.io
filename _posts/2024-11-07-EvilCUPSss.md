@@ -16,7 +16,7 @@ tags:
   - linux
 ---
 
-![](/assets/images/EvilCUPS/0_uZO541QLUUyiyuW1-1681376233.png)
+![](https://404zzero.github.io/zzero.github.io//assets/images/EvilCUPS/0_uZO541QLUUyiyuW1-1681376233.png)
 xd
 "EvilCUPS" es una máquina de HackTheBox basada en vulnerabilidades del servicio CUPS que permiten ejecución remota de comandos. Siguiendo un tutorial reciente, logramos acceso inicial al sistema y, al revisar archivos de configuración de CUPS, encontramos una contraseña reutilizada para root, lo que nos dio control total del sistema.
 
