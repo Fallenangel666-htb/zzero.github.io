@@ -1,4 +1,4 @@
-![](Blazorized-card.png)
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Blazorized-card.png)
 ---
 
 **Blazorized** es una máquina de dificultad difícil en la plataforma HackTheBox. La máquina en cuestión está ejecutando un servidor web. Al inspeccionar su código fuente, conseguimos encontrar y extraer varios archivos `.dll`. Tras realizar ingeniería inversa sobre estos archivos, logramos descubrir la firma que nos permite generar un **JSON Web Token (JWT)**, lo que nos da acceso a un panel de administración. Este panel tiene una vulnerabilidad de **SQL Injection**, que nos permite ejecutar comandos y obtener acceso inicial a la máquina.
