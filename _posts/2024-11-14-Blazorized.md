@@ -1,3 +1,35 @@
+---
+layout: single
+title: write up Blazorized
+excerpt:
+date: 2024-11-13
+classes: wide
+header:
+  teaser: /assets/images/Blazorized/Blazorized-card.png
+  teaser_home_page: true
+categories:
+  - hacking
+  - linux
+  - SQLI
+  - Active Directory
+  - windows
+  - JWT
+  - kerberos
+  - DCSync
+  - hash ntml
+tags:  
+  - hacking
+  - linux
+  - SQLI
+  - Active Directory
+  - windows
+  - JWT
+  - kerberos
+  - DCSync
+  - hash ntml
+---
+
+
 ![](https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Blazorized-card.png)
 ---
 
