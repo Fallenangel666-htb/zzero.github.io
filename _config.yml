@@ -159,7 +159,7 @@ exclude:
   - node_modules
   - package.json
   - Rakefile
-  -README
+  - README
   -tmp
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimum Mistakes /test
