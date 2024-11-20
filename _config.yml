@@ -160,7 +160,7 @@ exclude:
   - package.json
   - Rakefile
   - README
-  -tmp
+  - tmp
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimum Mistakes /test
 keep_files:
