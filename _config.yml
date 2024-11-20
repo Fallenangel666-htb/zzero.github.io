@@ -3,11 +3,11 @@
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# jekyll serve. If you change this file, please restart the server process.
+# `jekyll serve`. If you change this file, please restart the server process.
 
 # Theme Settings
 #
-# Review documentation to determine if you should use theme or remote_theme
+# Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
@@ -16,13 +16,13 @@ minimal_mistakes_skin    : "haxor" # "air", "aqua", "contrast", "dark", "dirt", 
 
 # Site Settings
 locale                   : "Spain"
-title                    : "404zzero.github.io"
+title                    : "error"
 title_separator          : "-"
 name                     : "404_zzero"
-description              : "cybersecurity and ethical hacking"
-url                      : "https://404-zzero.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : "hacker etico y cyberseguridad ofensiva (tambien soy atrtista)"
+url                      : "https://github.com/404zzero" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "slemire/slemire.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 logo                     : "/assets/images/masthead.png"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : true # true, false (default)
@@ -55,88 +55,88 @@ staticman:
       options:
         format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 reCaptcha:
-  siteKey:
-  secret:
+  siteKey                :
+  secret                 :
 atom_feed:
-  path : # blank (default) uses feed.xml
-search : # true, false (default)
-search_full_content : # true, false (default)
-search_provider : # lunr (default), algolia, google
+  path                   : # blank (default) uses feed.xml
+search                   : # true, false (default)
+search_full_content      : # true, false (default)
+search_provider          : # lunr (default), algolia, google
 algolia:
-  application_id : # YOUR_APPLICATION_ID
-  index_name : # YOUR_INDEX_NAME
-  search_only_api_key : # YOUR_SEARCH_ONLY_API_KEY
-  powered_by : # true (default), false
-Google:
-  search_engine_id : # YOUR_SEARCH_ENGINE_ID
-  instant_search : # false (default), true
-#SEORelated
-google_site_verification:
-bing_site_verification:
+  application_id         : # YOUR_APPLICATION_ID
+  index_name             : # YOUR_INDEX_NAME
+  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
+  powered_by             : # true (default), false
+google:
+  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
+  instant_search         : # false (default), true
+# SEO Related
+google_site_verification :
+bing_site_verification   :
 yandex_site_verification :
-naver_site_verification :
+naver_site_verification  :
 
-#SocialSharing
+# Social Sharing
 twitter:
-  username:
+  username               :
 facebook:
-  username:
-  app_id :
-  publisher:
-og_image : # Open Graph/Twitter default site image
+  username               :
+  app_id                 :
+  publisher              :
+og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type : # Person or Organization (defaults to Person)
-  name : # If the user or organization name differs from the site's name
+  type                   : # Person or Organization (defaults to Person)
+  name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
 
-#Analytics
+# Analytics
 analytics:
-  provider : "google" # false (default), "google", "google-universal", "custom"
-  Google:
-    tracking_id: "UA-145129883-1"
-    anonymize_ip : false # (default)
+  provider               : "google" # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          : "UA-145129883-1"
+    anonymize_ip         : false # (default)
 
 
-#SiteAuthor
+# Site Author
 author:
-  name: "404_zzero"
-  avatar: "/assets/images/avatar.png"
-  bio: "aspiring pentester and Red team, programmer and linux enthusiast "
-  location: "Spain"
-  email: "plgggg358@gmail.com"
-  uri:
-  home : # null (default), "absolute or relative url to link to author home"
-  bitbucket:
-  codepen:
-  dribble:
-  flickr:
-  facebook:
-  foursquare:
-  github: "404zzero"
-  gitlab:
-  google_plus:
-  keybase:
-  instagram:
-  lastfm:
-  linkedin: # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
-  pinterest:
-  soundcloud:
-  stackoverflow: # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
-  steam : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
-  tumblr:
-  twitter: 
-  I came:
-  weibo:
-  xing:
-  youtube: # "https://youtube.com/c/MichaelRoseDesign"
+  name             : "404zzero"
+  avatar           : "/assets/images/avatar.png"
+  bio              : "Pentester/red team,<br>HackTheBox ATeam, linux enthusiast"
+  location         : "spain"
+  email            : "pmpmpjjg358@gmail.com"
+  uri              :
+  home             : # null (default), "absolute or relative url to link to author home"
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  flickr           :
+  facebook         :
+  foursquare       :
+  github           : "404zzero"
+  gitlab           :
+  google_plus      :
+  keybase          : 
+  instagram        :
+  lastfm           :
+  linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  pinterest        :
+  soundcloud       :
+  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
+  steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
+  tumblr           :
+  twitter          : "snowscan"
+  vine             :
+  weibo            :
+  xing             :
+  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
 
 
-#ReadingFiles
+# Reading Files
 include:
   - .htaccess
-   -_pages
+  - _pages
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -162,12 +162,12 @@ exclude:
   - README
   - tmp
   - /docs # ignore Minimal Mistakes /docs
-  - /test # ignore Minimum Mistakes /test
+  - /test # ignore Minimal Mistakes /test
 keep_files:
   - .git
   - .svn
 encoding: "utf-8"
- markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 
 # Conversion
