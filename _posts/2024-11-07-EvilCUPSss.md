@@ -1,6 +1,6 @@
 ---
 layout: single
-title: write up EvilCUPS
+title: write up EvilCUPS HTB
 excerpt:
 date: 2024-11-07
 classes: wide
