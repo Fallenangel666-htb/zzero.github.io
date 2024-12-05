@@ -1,6 +1,6 @@
 ---
 layout: single
-title: write up Blazorized
+title: write up Blazorized HTB
 excerpt:
 date: 2024-11-13
 classes: wide
