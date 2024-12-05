@@ -5,7 +5,7 @@ excerpt:
 date: 2024-11-13
 classes: wide
 header:
-  teaser: /assets/images/Blazorized/Blazorized-card.png
+  teaser: https://404zzero.github.io/zzero.github.io//assets/images/Blazorized/Blazorized_avatar.png
   teaser_home_page: true
 categories:
   - hacking
