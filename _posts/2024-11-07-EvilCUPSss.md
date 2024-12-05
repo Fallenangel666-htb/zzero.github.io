@@ -5,7 +5,7 @@ excerpt:
 date: 2024-11-07
 classes: wide
 header:
-  teaser: /assets/images/EvilCUPS/0_uZO541QLUUyiyuW1-1681376233.png
+  teaser: https://404zzero.github.io/zzero.github.io//assets/images/EvilCUPS/EvilCUPS_avatar.png
   teaser_home_page: true
 categories:
   - hacking
