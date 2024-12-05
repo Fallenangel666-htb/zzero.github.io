@@ -5,7 +5,7 @@ excerpt:
 date: 2024-01-16
 classes: wide
 header:
-  teaser: ![](https://404zzero.github.io/zzero.github.io//assets/images/archivoslinux/kali_linux.jpg)
+  teaser: https://404zzero.github.io/zzero.github.io//assets/images/archivoslinux/kali_linux.jpg
   teaser_home_page: true
 categories:
   - hacking
