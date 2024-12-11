@@ -2,7 +2,7 @@
 layout: single
 title: write up GreenHorn HTB
 excerpt:
-date: 2024-12-4
+date: 2024-12-11
 classes: wide
 header:
   teaser: https://404zzero.github.io/zzero.github.io//assets/images/GreenHorn/GreenHorn_avatar.png
@@ -10,19 +10,23 @@ header:
 categories:
   - hacking
   - Linux
-  - SSRF
-  - Skipper proxy
-  - CVE
-  - blazor
-  - ProcMon
+  - gitea
+  - Pluck
+  - git
+  - crakear
+  - RCE
+  - pivoting
+  - imagen
 tags:  
   - hacking
   - Linux
-  - SSRF
-  - Skipper proxy
-  - CVE
-  - blazor
-  - ProcMon
+  - gitea
+  - Pluck
+  - git
+  - crakear
+  - RCE
+  - pivoting
+  - imagen
 ---
 "GreenHorn" es una máquina de dificultad fácil en la plataforma HackTheBox. En este reto, descubrimos que el servidor víctima está ejecutando una instancia de Gitea y un servicio web Pluck CMS. Primero, logramos crear una cuenta en la instancia de Gitea y, tras explorar un repositorio público, encontramos un hash que podemos crackear, obteniendo así la contraseña para acceder al panel de administración de Pluck CMS. Al ingresar, instalamos un módulo malicioso que nos permite ejecutar comandos de forma remota, lo que nos da acceso inicial a la máquina víctima. Una vez dentro, descubrimos que uno de los usuarios está utilizando la misma contraseña del panel de Pluck CMS, lo que nos permite pivotear. Este nuevo usuario tiene un archivo PDF que contiene una contraseña pixeleada, la cual podemos "depixelar" para obtener la contraseña del usuario root, logrando así el control total sobre la máquina víctima.
 
