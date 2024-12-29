@@ -1,6 +1,4 @@
 main:
-  - title: "sobre mi"
-    url: /about/
   - title: "Home"
     url: /
   - title: "Posts"
@@ -9,4 +7,5 @@ main:
     url: /categories/
   - title: "Tags"
     url: /tags/
-
+  - title: "about"
+    url: /about/
