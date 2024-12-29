@@ -12,11 +12,11 @@ date: 2019-02-15
   <div class="text-box" style="margin-top: 20px; text-align: left; padding: 15px; border: 2px solid #ccc; border-radius: 10px; background-color: #f9f9f9; width: 80%; max-width: 600px; margin-left: auto; margin-right: auto;">
     <!-- Aquí puedes escribir el texto que desees -->
 buenas me llamo 404_zzero en la redes y soy un hacker ético español. Soy un entusiasta de la ciberseguridad, el hacking, el hardware y Linux en general.
-
+<br>
 Actualmente estoy estudiando y aparte me estoy sacando por mi cuenta certificaciones de ciberseguridad. Básicamente paso mis días haciendo maquinas de <a href="https://app.hackthebox.com/users/1728618">Hack the box </a>
-
+<br>
 como e dicho también me encanta el hardware y me flipa mucho montar PCs con refrigeracionews liquidas custom
-
+<br>
 y nada mas por aquí y HAPPY HACKING  </div>
 </div>
 
