@@ -13,9 +13,15 @@ date: 2019-02-15
     <!-- Aquí puedes escribir el texto que desees -->
 buenas me llamo 404_zzero en la redes y soy un hacker ético español. Soy un entusiasta de la ciberseguridad, el hacking, el hardware y Linux en general.
 <br>
+<br>
+<br>
 Actualmente estoy estudiando y aparte me estoy sacando por mi cuenta certificaciones de ciberseguridad. Básicamente paso mis días haciendo maquinas de <a href="https://app.hackthebox.com/users/1728618">Hack the box </a>
 <br>
+<br>
+<br>
 como e dicho también me encanta el hardware y me flipa mucho montar PCs con refrigeracionews liquidas custom
+<br>
+<br>
 <br>
 y nada mas por aquí y HAPPY HACKING  </div>
 </div>
