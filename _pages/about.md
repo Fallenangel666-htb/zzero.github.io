@@ -11,7 +11,7 @@ date: 2019-02-15
   </div>
   <div class="text-box" style="margin-top: 20px; text-align: left; padding: 15px; border: 2px solid #ccc; border-radius: 10px; background-color: #f9f9f9; width: 80%; max-width: 600px; margin-left: auto; margin-right: auto;">
     <!-- Aquí puedes escribir el texto que desees -->
-buenas me llamo 404_zzero en la redes y soy un hacker ético español. Soy un entusiasta de la ciberseguridad, el hacking, el hardware y Linux en general.
+buenas me llamo FallenAngel666 en la redes y soy un hacker ético español. Soy un entusiasta de la ciberseguridad, el hacking, el hardware y Linux en general.
 <br>
 <br>
 <br>
