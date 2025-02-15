@@ -64,6 +64,15 @@ tags:
   - cap-sys-module
   - kernel-module
 ---
+En el ataque a *MagicGardens*, primero se aprovecha una vulnerabilidad en un sitio web basado en Django, manipulándolo para que procese y apruebe de forma fraudulenta la compra de una suscripción premium. Gracias a esa suscripción, se inserta una carga maliciosa en un código QR, lo que permite capturar la cookie del administrador. Con esa cookie, se accede al panel de administración de Django, donde se obtiene el *hash* de la contraseña y acceso mediante SSH al sistema.  
+
+Dentro del sistema, se identifica a otro usuario que ejecuta un programa personalizado de monitorización de red. A través de un desbordamiento de búfer en el controlador de tráfico IPv6, se consigue abrir una *shell* con los permisos de ese usuario.  
+
+Este usuario tiene privilegios sobre el registro de Docker, lo que permite acceder a la imagen del contenedor que ejecuta el sitio Django, donde se encuentra un secreto codificado. Aprovechando una vulnerabilidad de deserialización en la aplicación del contenedor, se obtiene acceso como superusuario (*root*) dentro del contenedor.  
+
+Por último, se explota la capacidad de cargar módulos en el núcleo (*kernel*) desde el contenedor para escalar privilegios y conseguir acceso completo como *root* en el sistema principal.
+
+
 
 lo primero como siempre el escaneo de nmap:
 ```bash
