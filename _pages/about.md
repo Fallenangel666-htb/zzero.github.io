@@ -19,11 +19,30 @@ Actualmente estoy estudiando y aparte me estoy sacando por mi cuenta certificaci
 <br>
 <br>
 <br>
-como e dicho también me encanta el hardware y me flipa mucho montar PCs con refrigeracionews liquidas custom
 <br>
 <br>
-<br>
-y nada mas por aquí y HAPPY HACKING  </div>
+</div>
+</div>
+
+<div>
+  actualmente estoy cursando el FP superior de ASIR para nada mas acabarlo ir a la universidad y entrar a la ingeniería de ciberseguirdad y incluso optar al doctorado
+  <br>
+  <br>
+  <br>
+  mientras curso ASIR (porque la verdad se me hace muy facil :`3) aprovecho mi tiempo para estudiar y certificaciones enfocadas al hacking. Actualmente estoy haciendo el eCCPTv3 y el PNPT
+  <br>
+  <br>
+  <br>
+  os mustro como es mi 'road map' de certificaciones en caso de que todo me salga bien a la primera y que disponga del dinero claro
+</div>
+<div>
+  <img src="https://404zzero.github.io/zzero.github.io//assets/images/cert.png" style="max-width: 150px; border-radius: 15px; border: 2px solid #ccc;"
+</div>
+<div>
+  ya un poco mas sobre mis aficiones y demas. soy un loco del hardware y me encanta montra ordenadores de gama extrema y refrigeranciones liquidas custom. tambien soy fanatico de la cultura asiatica y nordica
+  <br>
+  <br>
+  y ya no se que mas poner asique HAPPY HACKING
 </div>
 
 <style>
