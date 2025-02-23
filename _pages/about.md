@@ -1,6 +1,6 @@
 ---
-title: "About"
-permalink: /about/
+title: "Sobre mí"
+permalink: /sobre-mi/
 date: 2019-02-15
 ---
 
@@ -10,39 +10,32 @@ date: 2019-02-15
     Mi presentación
   </div>
   <div class="text-box" style="margin-top: 20px; text-align: left; padding: 15px; border: 2px solid #ccc; border-radius: 10px; background-color: #f9f9f9; width: 80%; max-width: 600px; margin-left: auto; margin-right: auto;">
-    <!-- Aquí puedes escribir el texto que desees -->
-buenas me llamo FallenAngel666 en la redes y soy un hacker ético español. Soy un entusiasta de la ciberseguridad, el hacking, el hardware y Linux en general.
-<br>
-<br>
-<br>
-Actualmente estoy estudiando y aparte me estoy sacando por mi cuenta certificaciones de ciberseguridad. Básicamente paso mis días haciendo maquinas de <a href="https://app.hackthebox.com/users/1728618">Hack the box </a>
-<br>
-<br>
-<br>
-<br>
-<br>
-</div>
+    Buenas, me llamo FallenAngel666 en las redes y soy un hacker ético español. Soy un entusiasta de la ciberseguridad, el hacking, el hardware y Linux en general.
+    <br>
+    <br>
+    Actualmente estoy estudiando y, además, me estoy sacando por mi cuenta certificaciones de ciberseguridad. Básicamente, paso mis días haciendo máquinas en <a href="https://app.hackthebox.com/users/1728618">Hack the Box</a>.
+    <br>
+    <br>
+  </div>
 </div>
 
-<div>
-  actualmente estoy cursando el FP superior de ASIR para nada mas acabarlo ir a la universidad y entrar a la ingeniería de ciberseguirdad y incluso optar al doctorado
+<div class="text-box" style="margin-top: 20px; text-align: left; padding: 15px; border: 2px solid #ccc; border-radius: 10px; background-color: #f9f9f9; width: 80%; max-width: 600px; margin-left: auto; margin-right: auto;">
+  Actualmente, estoy cursando el ciclo formativo superior de ASIR y, cuando lo termine, tengo la intención de ir a la universidad para estudiar ingeniería de ciberseguridad e incluso optar a un doctorado.
   <br>
   <br>
-  <br>
-  mientras curso ASIR (porque la verdad se me hace muy facil :3) aprovecho mi tiempo para estudiar y certificaciones enfocadas al hacking. Actualmente estoy haciendo el eCCPTv3 y el PNPT
-  <br>
+  Mientras curso ASIR (porque la verdad, se me hace muy fácil :`3), aprovecho mi tiempo para estudiar certificaciones enfocadas al hacking. Actualmente estoy haciendo el eCCPTv3 y el PNPT.
   <br>
   <br>
-  Os muestro como es mi 'road map' de certificaciones en caso de que todo me salga bien a la primera y que disponga del dinero claro
+  A continuación, os muestro cómo es mi 'roadmap' de certificaciones, en caso de que todo me salga bien a la primera y, por supuesto, de que disponga del dinero necesario.
 </div>
-<div>
-  <img src="https://404zzero.github.io/zzero.github.io//assets/images/cert.png" style="max-width: 150px; border-radius: 15px; border: 2px solid #ccc;"
+<div class="text-box" style="margin-top: 20px; text-align: left; padding: 15px; border: 2px solid #ccc; border-radius: 10px; background-color: #f9f9f9; width: 80%; max-width: 600px; margin-left: auto; margin-right: auto;">
+  <img src="https://404zzero.github.io/zzero.github.io//assets/images/cert.png" style="max-width: 150px; border-radius: 15px; border: 2px solid #ccc;">
 </div>
-<div>
-  ya un poco mas sobre mis aficiones y demas. soy un loco del hardware y me encanta montra ordenadores de gama extrema y refrigeranciones liquidas custom. tambien soy fanatico de la cultura asiatica y nordica
+<div class="text-box" style="margin-top: 20px; text-align: left; padding: 15px; border: 2px solid #ccc; border-radius: 10px; background-color: #f9f9f9; width: 80%; max-width: 600px; margin-left: auto; margin-right: auto;">
+  Ya un poco más sobre mis aficiones: soy un apasionado del hardware y me encanta montar ordenadores de gama extrema y sistemas de refrigeración líquida custom. También soy fanático de la cultura asiática y nórdica.
   <br>
   <br>
-  y ya no se que mas poner asique HAPPY HACKING
+  Y ya no sé qué más poner, así que ¡HAPPY HACKING!
 </div>
 
 <style>
