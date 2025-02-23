@@ -28,7 +28,7 @@ date: 2019-02-15
 </div>
 
 <div style="text-align: center;">
-  <img src="https://404zzero.github.io/zzero.github.io//assets/images/cert.png" style="max-width: 150px; border-radius: 15px; border: 2px solid #ccc;" />
+  <img src="https://404zzero.github.io/zzero.github.io//assets/images/cert.png" style="max-width: 600px; border-radius: 15px; border: 2px solid #ccc;" />
 </div>
 
 <div class="text-box" style="margin-top: 20px; text-align: left; padding: 15px; border: 2px solid #ccc; border-radius: 10px; background-color: #f9f9f9; width: 80%; max-width: 600px; margin-left: auto; margin-right: auto;">
