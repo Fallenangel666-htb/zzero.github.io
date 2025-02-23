@@ -19,7 +19,7 @@ date: 2019-02-15
   </div>
 </div>
 
-<div>
+<div class="text-box" style="margin-top: 20px; text-align: left; padding: 15px; border: 2px solid #ccc; border-radius: 10px; background-color: #f9f9f9; width: 80%; max-width: 600px; margin-left: auto; margin-right: auto;">
   Actualmente, estoy cursando el ciclo formativo superior de ASIR y, cuando lo termine, tengo la intención de ir a la universidad para estudiar ingeniería de ciberseguridad e incluso optar a un doctorado.
   <br>
   <br>
@@ -28,10 +28,10 @@ date: 2019-02-15
   <br>
   A continuación, os muestro cómo es mi 'roadmap' de certificaciones, en caso de que todo me salga bien a la primera y, por supuesto, de que disponga del dinero necesario.
 </div>
-<div>
+<div style="text-align: center;" >
   <img src="https://404zzero.github.io/zzero.github.io//assets/images/cert.png" style="max-width: 150px; border-radius: 15px; border: 2px solid #ccc;">
 </div>
-<div>
+<div  class="text-box" style="margin-top: 20px; text-align: left; padding: 15px; border: 2px solid #ccc; border-radius: 10px; background-color: #f9f9f9; width: 80%; max-width: 600px; margin-left: auto; margin-right: auto;">
   Ya un poco más sobre mis aficiones: soy un apasionado del hardware y me encanta montar ordenadores de gama extrema y sistemas de refrigeración líquida custom. También soy fanático de la cultura asiática y nórdica.
   <br>
   <br>
