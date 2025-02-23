@@ -18,7 +18,7 @@ date: 2019-02-15
 </div>
 
 <div class="text-box" style="margin-top: 20px; text-align: left; padding: 15px; border: 2px solid #ccc; border-radius: 10px; background-color: #f9f9f9; width: 80%; max-width: 600px; margin-left: auto; margin-right: auto;">
-  Actualmente estoy cursando el FP superior de ASIR, para, nada más acabarlo, ir a la universidad y entrar a la ingeniería de ciberseguridad e incluso optar al doctorado.
+  Actualmente (momenro que escribo esto 2025) estoy cursando el FP superior de ASIR, para, nada más acabarlo, ir a la universidad y entrar a la ingeniería de ciberseguridad e incluso optar al doctorado.
   <br>
   <br>
   Mientras curso ASIR (porque la verdad se me hace muy fácil :3), aprovecho mi tiempo para estudiar y hacer certificaciones enfocadas al hacking. Actualmente estoy haciendo el eCCPTv3, PNPT y OSCP (Realmente todas son de el mismo calibre asique la diferencia es el reconocimiento, el valor y lo que cuestan) (aparte que a momento de que escribo esto realmente no me las saco por falta de dinero para que mentir).
