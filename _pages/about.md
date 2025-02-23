@@ -5,7 +5,7 @@ date: 2019-02-15
 ---
 
 <div style="text-align: center;">
-  <img src="https://404zzero.github.io/zzero.github.io//assets/images/avatar4.jpg" alt="Avatar" style="max-width: 150px; border-radius: 15px; border: 2px solid #ccc;">
+  <img src="https://404zzero.github.io/zzero.github.io//assets/images/avatar5.jpeg" alt="Avatar" style="max-width: 150px; border-radius: 15px; border: 2px solid #ccc;">
   <div class="matrix-text" style="margin-top: 10px;">
     Mi presentación
   </div>
