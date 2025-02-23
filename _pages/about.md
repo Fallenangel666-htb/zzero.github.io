@@ -26,11 +26,13 @@ date: 2019-02-15
   <br>
   Os muestro cómo es mi 'roadmap' de certificaciones en caso de que todo me salga bien a la primera y que disponga del dinero, claro.
 </div>
-
+<br>
+<br>
 <div style="text-align: center;">
-  <img src="https://404zzero.github.io/zzero.github.io//assets/images/cert.png" style="max-width: 600px; border-radius: 15px; border: 2px solid #ccc;" />
+  <img src="https://404zzero.github.io/zzero.github.io//assets/images/cert.png" style="max-width: 750px; border-radius: 15px; border: 2px solid #ccc;" />
 </div>
-
+<br>
+<br>
 <div class="text-box" style="margin-top: 20px; text-align: left; padding: 15px; border: 2px solid #ccc; border-radius: 10px; background-color: #f9f9f9; width: 80%; max-width: 600px; margin-left: auto; margin-right: auto;">
   Ya un poco más sobre mis aficiones y demás: soy un loco del hardware y me encanta montar ordenadores de gama extrema y refrigeraciones líquidas custom. También soy fanático de la cultura asiática y nórdica.
   <br>
