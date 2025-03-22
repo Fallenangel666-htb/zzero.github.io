@@ -2,42 +2,30 @@
 layout: single
 title: write up Yummy HTB
 excerpt:
-date: 2025-2-26
+date: 2025-3-18
 classes: wide
 header:
-  teaser: https://404zzero.github.io/zzero.github.io//assets/images/yummy/yummy_avatar.png
+  teaser: https://404zzero.github.io/zzero.github.io//assets/images/certified/certified_avatar.png
   teaser_home_page: true
 categories:
   - hacking
-  - linux
+  - Windows
   - ctf
-  - ics-py
-  - jwt
-  - rsa
-  - caddy
-  - burpsuite
-  - python
-  - lfi
-  - sqli
-  - cronjob
-  - flask
-  - Rsync
+  - netexect
+  - bloodhunt
+  - adcs
+  - certipy
+  - ESC9
   - hackthebox
-tags:  
+tags:
   - hacking
-  - linux
+  - Windows
   - ctf
-  - ics-py
-  - jwt
-  - rsa
-  - caddy
-  - burpsuite
-  - python
-  - lfi
-  - sqli
-  - cronjob
-  - flask
-  - Rsync
+  - netexect
+  - bloodhunt
+  - adcs
+  - certipy
+  - ESC9
   - hackthebox
 ---
 
