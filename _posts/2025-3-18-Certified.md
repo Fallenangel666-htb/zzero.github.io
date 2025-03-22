@@ -1,6 +1,6 @@
 ---
 layout: single
-title: write up Yummy HTB
+title: write up Certified HTB
 excerpt:
 date: 2025-3-18
 classes: wide
