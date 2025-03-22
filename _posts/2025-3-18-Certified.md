@@ -3,7 +3,7 @@ excerpt:
 date: 2025-3-18
 classes: wide
 header:
-  teaser: https://404zzero.github.io/zzero.github.io//assets/images/Certified/certified_avatar.png
+  teaser: https://404zzero.github.io/zzero.github.io//assets/images/certified/certified_avatar.png
   teaser_home_page: true
 categories:
   - hacking
@@ -35,7 +35,7 @@ lo primero como siempre el escaneo de Nmap
 nmap -p- --open --min-rate 5000 -sT -vvv -n -Pn 10.10.11.41 -oG allports
 ```
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241219142548.png
+![](https://404zzero.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241219142548.png)
 
 ```bash
 nmap -sVC -p53,88,135,139,389,445,593,636,3269,5985,9389,49666,49668,49673,49674,49683,49773 10.10.11.41 -oN ports
