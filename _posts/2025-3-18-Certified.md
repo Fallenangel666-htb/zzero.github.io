@@ -1,32 +1,45 @@
 ---
-title: write up Certified HTB
+layout: single
+title: write up Yummy HTB
 excerpt:
-date: 2025-3-18
+date: 2025-2-26
 classes: wide
 header:
-  teaser: https://404zzero.github.io/zzero.github.io//assets/images/certified/certified_avatar.png
+  teaser: https://404zzero.github.io/zzero.github.io//assets/images/yummy/yummy_avatar.png
   teaser_home_page: true
 categories:
   - hacking
-  - Windows
+  - linux
   - ctf
-  - netexect
-  - bloodhunt
-  - adcs
-  - certipy
-  - ESC9
+  - ics-py
+  - jwt
+  - rsa
+  - caddy
+  - burpsuite
+  - python
+  - lfi
+  - sqli
+  - cronjob
+  - flask
+  - Rsync
   - hackthebox
 tags:  
   - hacking
-  - Windows
+  - linux
   - ctf
-  - netexect
-  - bloodhunt
-  - adcs
-  - certipy
-  - ESC9
+  - ics-py
+  - jwt
+  - rsa
+  - caddy
+  - burpsuite
+  - python
+  - lfi
+  - sqli
+  - cronjob
+  - flask
+  - Rsync
   - hackthebox
-  ---
+---
 
 "Certified" es una máquina de dificultad media en HackTheBox que involucra un entorno de Active Directory. Al comenzar, se nos proporcionan credenciales de un usuario inicial que tiene la capacidad de agregarse a un grupo específico. Aprovechando este privilegio, podemos unirnos a dicho grupo y ejecutar un ataque de Shadow Credentials contra otro usuario, lo que nos permite obtener su hash NT. Este segundo usuario también es vulnerable al mismo ataque, permitiéndonos comprometer la cuenta de un tercer usuario. Esta última cuenta tiene permisos para gestionar certificados, lo que abre la posibilidad de explotar la vulnerabilidad ESC9 en el servicio AD CS. A través de esta técnica, logramos escalar privilegios y suplantar la identidad del Administrador del dominio.
 
