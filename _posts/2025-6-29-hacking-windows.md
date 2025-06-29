@@ -1,6 +1,6 @@
 ---
 layout: single
-title: porque es mejor aditar AD desde un windows que un OS linux?
+title: porque es mejor auditar AD desde un windows que un OS linux?
 excerpt:
 date: 2025-6-29
 classes: wide
