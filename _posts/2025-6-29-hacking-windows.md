@@ -5,7 +5,7 @@ excerpt:
 date: 2025-6-29
 classes: wide
 header:
-  teaser: https://404zzero.github.io/zzero.github.io//assets/images/certified/certified_avatar.png
+  teaser: https://tryhackme-images.s3.amazonaws.com/room-icons/a936e45c948fb10f2eec7768c7a32e66.png
   teaser_home_page: true
 categories:
   - hacking
