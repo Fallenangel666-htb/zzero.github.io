@@ -102,7 +102,7 @@ analytics:
 # Site Author
 author:
   name             : "FallenAngel666"
-  avatar           : "/assets/images/avatar5.jpeg"
+  avatar           : "/assets/images/avatar6.jpg"
   bio              : "red team for ..... ,<br>HackTheBox ,<br> linux enthusiast"
   location         : "spain"
   email            : "pmpmpjjg358@gmail.com"
@@ -120,7 +120,7 @@ author:
   keybase          : 
   instagram        :
   lastfm           :
-  linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : "pedro-marquina-martin-93a087364"
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
