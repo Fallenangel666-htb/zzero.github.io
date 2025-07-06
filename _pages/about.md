@@ -71,7 +71,7 @@ date: 2019-02-15
 </style>
 
 <div class="container">
-  <img class="avatar" src="https://404zzero.github.io/zzero.github.io//assets/images/avatar6.jpg" alt="Avatar">
+  <img class="avatar" src="https://404zzero.github.io/zzero.github.io//assets/images/avatar62.jpg" alt="Avatar">
   <div class="text-box">
     <p>Buenas, me llamo FallenAngel666 en las redes y soy un hacker ético español. Soy un entusiasta de la ciberseguridad, el hacking, el hardware y Linux en general.</p>
     <p>Actualmente estoy estudiando y, aparte, me estoy sacando por mi cuenta certificaciones de ciberseguridad. Básicamente paso mis días haciendo máquinas de Hack The Box.</p>
