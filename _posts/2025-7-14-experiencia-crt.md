@@ -21,6 +21,9 @@ tags:
 
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4TtfJ5kptQAkymap9z8CMc?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
+Esta es la cancion con la hice todo mi camino en el CRTP, e pensado en ir poniendo en cada post las canciones con los que los hago y asi mas inmersivo. si quieres escucharlo dale y aver si te gusta.
+
+
 Buenos Dias\Tardes\Noches:
 
 Puesssss porfin tengo el CRTP, la verdad que me siento bien con migo mismo.
