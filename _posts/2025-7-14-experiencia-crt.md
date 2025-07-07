@@ -2,7 +2,7 @@
 layout: single
 title: mi expereriencia con el CRTP
 excerpt:
-date: 2025-6-29
+date: 2025-7-14
 classes: wide
 header:
   teaser: https://404zzero.github.io/zzero.github.io//assets/images/proxy-image.png
@@ -18,6 +18,9 @@ tags:
   - linux
   - kerberos
 ---
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4TtfJ5kptQAkymap9z8CMc?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
 Buenos Dias\Tardes\Noches:
 
 Puesssss porfin tengo el CRTP, la verdad que me siento bien con migo mismo.
