@@ -1,52 +1,72 @@
 ---
 layout: single
-title: mi expereriencia con el CRTP
+title: porque es mejor auditar AD desde un windows que un OS linux???
 excerpt:
-date: 2025-7-14
+date: 2025-6-30
 classes: wide
 header:
-  teaser: https://404zzero.github.io/zzero.github.io//assets/images/certified/certified_avatar.png
+  teaser: https://tryhackme-images.s3.amazonaws.com/room-icons/a936e45c948fb10f2eec7768c7a32e66.png
   teaser_home_page: true
 categories:
-  - CRTP
   - hacking
   - Windows
-  - certification
+  - linux
   - kerberos
 tags:
-  - CRTP
   - hacking
   - Windows
-  - certification
+  - linux
   - kerberos
 ---
+prueba cambio
+Muy buenas a todos. Hace mucho que no aparezco por aqui.
 
-Buenos Dias\Tardes\Noches:
+E estado ocupado con el CRTP y CRTE de altered security y con mis practicas de ciberseguridad en una empresa.
 
-Puesssss porfin tengo el CRTP, la verdad que me siento bien con migo mismo.
+Haciendolas me e dado cuenta de una cosa por el enfoque que tenemos devido a los CTFs y offsec para que mentir.
 
-A sido una certificacion muy buena excepto por 2-3 cositas que ahora os cuento.
+Porque usamos linux para hackear ??? puesss principalmente es por su versatilizad, velocidad y porque con algo de maña es compatible con todo (lo dijo que yo que hace poco me monte una nevera con linux y un firewall clandestino apartir de un portatil aparentemente roto).
 
-EL crtp para quien no lo conozca es una certificacion de altered security y esta Full enfocada en AD y de forma manual y silenciosa.
+Pero me e dado cuenta que cuando auditamos AD (Active directory) no es la mejor opcion.
 
-El CRTP esta mas o menos a un nivel OSCP (la teoria es mas chunga que el OSCP pero el examen es mas facil) asique es una buena opcion para AD.
+![](https://miro.medium.com/v2/resize:fit:1400/1*GI-td9gs8D5OKZd19mAOqA.png)
 
-## el lab
+Y porqueee???
 
-el lab a sido de diez absoluto, quitando fallos normales (que es algo normal en estos tipos de labs). Si le decias al soporte que algo no iba te lo resolvian en un rato, a la mas las muy malas al dia siguiente estaba bien. Por lo demas un diez.
+pues porque normalmente en entronos reales (no CTFs) va a ver un crowdstrike, forti o cualquier otra tecnologia y amenos que sea muy mixta la red lo va a notar sospechoso.
 
-## el examen
+Esto con windows no suele pasar (a menos que ejecutes todo como un script kiddi xddd) y pasa mas desapercivido.
 
-Aqui van a llover datos. no voy a hacer espoiler pero yo e tenido que hacer el examen dos veces, Porque?? pues porque la primera vez que me presente al llegar a cierto punto del examen no aparecia una cosa y estube estancado 12 horas y nada, reiniciando aver si veia algo.
+Pero aqui biene la chica y esque es mas facil auditar.
 
-La segunda vez que me presente, lo hice en 3 horas el examen XDDDDD. Esta vez si que estaba.
+Me explico viendo maquinas de HTB atras con los conocimientos de CRTP y hablando con colegas mios me e dado cuenta de una cosa y esque con windows simplemente por su cara bonita nos saltamos comprovaciones y pasos.
 
-El examen bien pero me llevo esa primera mala experiencia.
+Lo cual es bueno.
 
-## siguiente certified
+Yo sinceramente que odio pero mucho windows para mi uso personal ( yo soy un frikardo de arch), pero para este uso la verdad que me a gustado bastante y cada vez que pueda auditar AD desde un windows lo voy hacer asi.
 
-Pues al principo iba a hacer el CRTE pero al averse actualizado el CRTO me a convencido mas la verdad. asique me voy a pasar totalmente a el CRTO y lo deveria tener aprovado a principos de septiembre o eso espero.
+Os voy a enseñar algunos ejemplos para que veais a lo que me refiero
 
-Y nada mas hackers que os valla bien.
+![](https://404zzero.github.io/zzero.github.io//assets/images/swappy-20250629_193740.png)
 
-quiero un pato
+![](https://404zzero.github.io/zzero.github.io//assets/images/swappy-20250629_193849.png)
+
+![](https://404zzero.github.io/zzero.github.io//assets/images/swappy-20250629_193949.png)
+
+![](https://404zzero.github.io/zzero.github.io//assets/images/swappy-20250629_194002.png)
+
+esto son fotos de mis apuntes y de layzyhackers
+
+basicamente a mi se me hace mas comodo auidtar AD desde windows ahora mismo.
+
+Pero voy a seguir defendiendo a linux a muerte y lo voy a seguir usando para todos lo demas
+
+Aparte de todo esto creo que aqui nunca e enseñado mi entorno Arch de mi dia a dia
+
+![](https://404zzero.github.io/zzero.github.io//assets/images/swappy-20250629_194201.png)
+
+aqui es donde hago practicamente todo veo pelis, videos, estudio, hackeo, etc.
+
+Y como podeis ver no es una maquina virtual porque pilla mi GPU dedicada y pues no se que mas decir
+
+VIVA LINUXXXX
