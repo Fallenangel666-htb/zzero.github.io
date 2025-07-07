@@ -105,7 +105,7 @@ author:
   avatar           : "/assets/images/avatar62.jpg"
   bio              : "red team for ..... ,<br>HackTheBox ,<br> linux enthusiast"
   location         : "spain"
-  email            : "pmpmpjjg358@gmail.com"
+  email            :
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
@@ -120,7 +120,7 @@ author:
   keybase          : 
   instagram        :
   lastfm           :
-  linkedin         : "pedro-marquina-martin-93a087364"
+  linkedin         : 
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
