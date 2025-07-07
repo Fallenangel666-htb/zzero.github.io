@@ -2,7 +2,7 @@
 layout: single
 title: mi expereriencia con el CRTP
 excerpt:
-date: 2025-7-14
+date: 2025-6-29
 classes: wide
 header:
   teaser: https://404zzero.github.io/zzero.github.io//assets/images/proxy-image.png
