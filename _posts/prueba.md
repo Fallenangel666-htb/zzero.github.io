@@ -1,8 +1,8 @@
 ---
 layout: single
-title: porque es mejor auditar AD desde un windows que un OS linux?
+title: prueba
 excerpt:
-date: 2025-6-29
+date: 2020-6-29
 classes: wide
 header:
   teaser: https://tryhackme-images.s3.amazonaws.com/room-icons/a936e45c948fb10f2eec7768c7a32e66.png
