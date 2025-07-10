@@ -53,3 +53,5 @@ Pues al principo iba a hacer el CRTE pero al averse actualizado el CRTO me a con
 Y nada mas hackers que os valla bien.
 
 quiero un pato
+
+![](https://404zzero.github.io/zzero.github.io//assets/images/crt.png)
