@@ -54,4 +54,4 @@ Y nada mas hackers que os valla bien.
 
 quiero un pato
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/crt.png)
+![](https://404zzero.github.io/zzero.github.io//assets/images/CRTP.png)
