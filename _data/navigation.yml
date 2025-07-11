@@ -1,6 +1,8 @@
 main:
   - title: "sobre mi"
     url: /about/
+  - title: "mis Certs"
+    url: /certs/
   - title: "Home"
     url: /
   - title: "Posts"
