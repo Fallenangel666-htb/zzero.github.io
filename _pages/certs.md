@@ -71,5 +71,5 @@ date: 2025-02-15
 </style>
 
 <div class="container">
-  <img class="avatar" src="https://404zzero.github.io/zzero.github.io//assets/images/CRTP.png"">
+  <img class="avatar" src="https://404zzero.github.io/zzero.github.io//assets/images/CRTP.png">
   <div class="text-box">
