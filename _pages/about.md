@@ -87,7 +87,7 @@ date: 2019-02-15
     <p>Mientras curso ASIR (porque la verdad se me hace muy fácil :3), aprovecho mi tiempo para estudiar y hacer certificaciones enfocadas al hacking. Actualmente estoy haciendo el CRTP, CRTE y CRTO (Realmente todas son muy seguidas y bastante calibre y reconocimiento) (aparte que a momento de que escribo esto realmente no me las saco por falta de dinero para qué mentir).</p>
     <p>Os muestro cómo es mi 'roadmap' de certificaciones en caso de que todo me salga bien a la primera y que disponga del dinero, claro.</p>
   </div>
-  <img class="cert-image" src="https://404zzero.github.io/zzero.github.io//assets/images/cert2.png" alt="Certificaciones">
+  <img class="cert-image" src="https://404zzero.github.io/zzero.github.io//assets/images/certs.png" alt="Certificaciones">
   <div class="text-box">
     <p>Ya un poco más sobre mis aficiones y demás: soy un loco del hardware y me encanta montar ordenadores de gama extrema y refrigeraciones líquidas custom. También soy fanático de la cultura asiática y nórdica.</p>
     <p>Y ya no sé qué más poner, así que... ¡HAPPY HACKING!</p>
