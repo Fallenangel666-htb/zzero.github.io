@@ -58,7 +58,7 @@ date: 2025-02-15
     <h3 style="color: #ffffff; margin: 0 0 10px;">Vista Previa del Certificado</h3>
     <img id="preview-image" src="https://404zzero.github.io/zzero.github.io/assets/images/CRTP.png" alt="Vista Previa del Certificado" style="max-width: 100%; border-radius: 8px; border: 1px solid #ccc;">
   </div>
-  <iframe data-testid="embed-iframe" style="border-radius:12px; margin-top: 20px;" src="https://open.spotify.com/embed/track/179rlj4Acrcpi5wFRSHTew?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  <iframe data-testid="embed-iframe" style="border-radius:12px; margin-top: 20px;" src="https://open.spotify.com/embed/track/7kOkra1rvY27YDxUzZQ94c?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>
 
 <style>
