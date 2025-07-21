@@ -20,7 +20,7 @@ date: 2025-02-15
       <div class="certificate-info" style="padding: 15px; text-align: left;">
         <h3 style="margin: 0 0 10px; font-size: 1.4em; color: #00ff00;">Certified Red Team Professional (CRTP)</h3>
         <p style="margin: 5px 0; color: #b0b0b0; font-size: 0.95em; font-style: italic;">Emitido por: Altered Security</p>
-        <p style="margin: 5px 0; color: #b0b0b0; font-size: 0.95em;">Completado: Junio 2024</p>
+        <p style="margin: 5px 0; color: #b0b0b0; font-size: 0.95em;">Completado: Julio 2025</p>
         <p style="margin: 5px 0; color: #b0b0b0; font-size: 0.95em;">Habilidades: Pruebas de Penetración, Seguridad de Active Directory</p>
       </div>
     </div>
