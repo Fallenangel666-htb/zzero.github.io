@@ -83,9 +83,9 @@ date: 2019-02-15
     </div>
   </div>
   <div class="text-box">
-    <p>Actualmente (momento que escribo esto 2025) estoy cursando el FP superior de ASIR, para, nada más acabarlo, ir a la universidad y entrar a la ingeniería de ciberseguridad e incluso optar al doctorado.</p>
-    <p>Mientras curso ASIR (porque la verdad se me hace muy fácil :3), aprovecho mi tiempo para estudiar y hacer certificaciones enfocadas al hacking. Actualmente estoy haciendo el CRTO, CRTL y OSED (CRTP ya la poseoo y a momento de hoy tengo el 60 % del CRTO) (Realmente todas son muy seguidas y bastante calibre y reconocimiento) (aparte que a momento de que escribo esto realmente no me las saco por falta de dinero para qué mentir).</p>
-    <p>Os muestro cómo es mi 'roadmap' de certificaciones en caso de que todo me salga bien a la primera y que disponga del dinero, claro.</p>
+    <p>Actualmente (a fecha de 2025, momento en que escribo esto), estoy cursando el FP Superior de ASIR, para, nada más terminarlo, ir a la universidad y estudiar Ingeniería de Ciberseguridad, e incluso optar al doctorado. </p>
+    <p>Mientras curso ASIR (porque, la verdad, se me hace muy fácil :3), aprovecho mi tiempo para estudiar y obtener certificaciones enfocadas al hacking. Actualmente estoy trabajando en el CRTO, CRTL y OSED (ya poseo el CRTP y, a día de hoy, tengo un 60 % del CRTO). (Realmente, todas son muy seguidas, de bastante calibre y con gran reconocimiento). (Aparte, a día de hoy, no me las saco por falta de dinero, para qué mentir)..</p>
+    <p>Os muestro cómo es mi 'roadmap' de certificaciones, en caso de que todo me salga bien a la primera y disponga del dinero, claro.</p>
   </div>
   <img class="cert-image" src="https://404zzero.github.io/zzero.github.io//assets/images/certs.png" alt="Certificaciones">
   <div class="text-box">
