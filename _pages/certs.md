@@ -15,7 +15,7 @@ date: 2025-02-15
   </div>
   <div class="certificates-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 0 10px;">
     <!-- Certificado CRTP -->
-    <div class="certificate-card" style="background-color: #1e1e1e; border: 2px solid #444; border-radius: 12px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); cursor: pointer;" data-image="https://404zzero.github.io/zzero.github.io/assets/images/CRTP.png">
+    <div class="certificate-card" style="background-color: #1e1e1e; border: 2px solid #444; border-radius: 12px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); cursor: pointer;" data-image="https://api.eu.badgr.io/public/badges/Od2nC1yPRPaDC9UCJ8W7Lg/image?type=png&fmt=wide">
       <img class="certificate-image" src="https://404zzero.github.io/zzero.github.io/assets/images/CRTP.png" alt="Certificado CRTP" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 2px solid #444;">
       <div class="certificate-info" style="padding: 15px; text-align: left;">
         <h3 style="margin: 0 0 10px; font-size: 1.4em; color: #00ff00;">Certified Red Team Professional (CRTP)</h3>
@@ -39,7 +39,7 @@ date: 2025-02-15
         </div>
       </div>
       <!-- Certificado CRTL -->
-      <div class="certificate-card" style="background-color: #1e1e1e; border: 2px solid #444; border-radius: 12px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); cursor: pointer;" data-image="https://404zzero.github.io/zzero.github.io/assets/images/CRTL_logo.png">
+      <div class="certificate-card" style="background-color: #1e1e1e; border: 2px solid #444; border-radius: 12px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); cursor: pointer;" data-image="https://www.bencteux.fr/img/rto-ii-logo.png">
         <img class="certificate-image" src="https://404zzero.github.io/zzero.github.io/assets/images/CRTL_logo.png" alt="Logo CRTL (Próximamente)" style="width: 100%; height: 200px; object-fit: contain; border-bottom: 2px solid #444; opacity: 0.6; background-color: #1e1e1e;">
         <div class="certificate-info" style="padding: 15px; text-align: left;">
           <h3 style="margin: 0 0 10px; font-size: 1.4em; color: #00ff00;">Certified Red Team Lead (CRTL)</h3>
@@ -49,7 +49,7 @@ date: 2025-02-15
         </div>
       </div>
       <!-- Certificado OSED -->
-      <div class="certificate-card" style="background-color: #1e1e1e; border: 2px solid #444; border-radius: 12px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); cursor: pointer;" data-image="https://404zzero.github.io/zzero.github.io/assets/images/OSED_logo.png">
+      <div class="certificate-card" style="background-color: #1e1e1e; border: 2px solid #444; border-radius: 12px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); cursor: pointer;" data-image="https://efigo.pl/wp-content/uploads/2024/10/OSED.XKmYW6Ds_ZGw05i.svg">
         <img class="certificate-image" src="https://404zzero.github.io/zzero.github.io/assets/images/OSED_logo.png" alt="Logo OSED (Próximamente)" style="width: 100%; height: 200px; object-fit: contain; border-bottom: 2px solid #444; opacity: 0.6; background-color: #1e1e1e;">
         <div class="certificate-info" style="padding: 15px; text-align: left;">
           <h3 style="margin: 0 0 10px; font-size: 1.4em; color: #00ff00;">Offensive Security Exploit Developer (OSED)</h3>
