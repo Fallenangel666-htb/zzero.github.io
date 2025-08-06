@@ -73,7 +73,7 @@ date: 2019-02-15
 <div class="container">
   <img class="avatar" src="https://404zzero.github.io/zzero.github.io//assets/images/avatar7.jpg" alt="Avatar">
   <div class="text-box">
-    <p>Buenas, me llamo FallenAngel666 en las redes y soy un hacker ético español. Soy un entusiasta de la ciberseguridad, el hacking, el hardware y Linux en general. Llevo 6 años en este mundo desde los (11 -12 años), empeze siendo blue team (me molan mazo los firewall) pero cuando descubri el red team al completo me enmaore <3 </p>
+    <p>Buenas, me llamo FallenAngel666 en las redes y soy un hacker ético español. Soy un entusiasta de la ciberseguridad, el hacking, el hardware y Linux en general. Llevo 6 años en este mundo (desde los 11 -12 años, tengo 18 actualmente :`3 ), empeze siendo blue team (me molan mazo los firewall) pero cuando descubri el red team al completo me enmaore <3 </p>
     <p>Actualmente estoy estudiando y, aparte, me estoy sacando por mi cuenta certificaciones de ciberseguridad. Básicamente paso mis días haciendo máquinas de Hack The Box.</p>
     <div class="preview-box">
       <a href="https://app.hackthebox.com/users/1728618" target="_blank">
