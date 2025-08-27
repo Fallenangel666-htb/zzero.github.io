@@ -47,13 +47,13 @@ Yo sinceramente que odio pero mucho windows para mi uso personal ( yo soy un fri
 
 Os voy a enseñar algunos ejemplos para que veais a lo que me refiero
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/swappy-20250629_193740.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/swappy-20250629_193740.png)
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/swappy-20250629_193849.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/swappy-20250629_193849.png)
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/swappy-20250629_193949.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/swappy-20250629_193949.png)
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/swappy-20250629_194002.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/swappy-20250629_194002.png)
 
 esto son fotos de mis apuntes y de layzyhackers
 
@@ -63,7 +63,7 @@ Pero voy a seguir defendiendo a linux a muerte y lo voy a seguir usando para tod
 
 Aparte de todo esto creo que aqui nunca e enseñado mi entorno Arch de mi dia a dia
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/swappy-20250629_194201.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/swappy-20250629_194201.png)
 
 aqui es donde hago practicamente todo veo pelis, videos, estudio, hackeo, etc.
 
