@@ -5,7 +5,7 @@ excerpt:
 date: 2025-2-13
 classes: wide
 header:
-  teaser: https://404zzero.github.io/zzero.github.io//assets/images/MagicGardens/MagicGardens_avatar.png
+  teaser: https://fallenangel666-htb.github.io/zzero.github.io//assets/images/MagicGardens/MagicGardens_avatar.png
   teaser_home_page: true
 categories:
   - ctf
@@ -78,7 +78,7 @@ lo primero como siempre el escaneo de nmap:
 ```bash
 nmap -p- --open --min-rate 5000 -sn -sT -Pn -n -vvv 10.10.11.9
 ```
-![](https://404zzero.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250213164845.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250213164845.png)
 
 ```bash
 nmap -sVC -p 22,80,1337,5000 10.10.11.9
@@ -124,22 +124,22 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 el escaneo encuentra dos puesrtos curiosos. el 80 con un dominio magicgardens.htb y un docker en el 5000
 
 poenemos el dominio en el /etc/hosts y hacedemos a la web
-![](https://404zzero.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250211112440.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250211112440.png)
 
 la pagina en si es una pagina de compra de flores. funciona como toda tienda normal. permite añadir al carrito y comprar. siempre que pongo la info para comrar recivo un mensaje de que el pedido se esta procesando
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250212110644.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250212110644.png)
 
 tambien puedo crear una cuenta. y generar un qr raro para comprar una nueva sub
 
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250212110941.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250212110941.png)
 
 al selecionar el banco nos salen 3 posibles opciones  honestbank.htb, magicalbank.htb, and plunders.htb. esto por si acaso lo añadimos en el etc/hosts por si tiene que hacer algo con la API
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250212111309.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250212111309.png)
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250212111653.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250212111653.png)
 
 si le damos a suscribir hace una peticion en POST ala propia tienda  y un nuevo mensaje flash explicando que mi suscripción se está procesando. Al actualizar la página aparece un mensaje de error sobre problemas con el pago.
 
@@ -214,9 +214,9 @@ if __name__ == '__main__':
 repetimos el proceso de burpsuite pero redirecionamos a nuestro exploit
 si lo emos echo vien saldra esto:
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250212122631.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250212122631.png)
 ahora cada vez que intentamos hacer una compra recibo un mensaje de morty pidiendome el qr
-![](https://404zzero.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250212123622.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250212123622.png)
 aqui podriamos intentar colar un XSS en una imagen de esta forma
 
 ```bash
@@ -230,9 +230,9 @@ le pasamos la imagen y ganamos la cookie de morty
 ```
 
 la ponemos en nuestro navegador y ya como morti podemos acceder a /admin puedo ver los objetos almacenados en la base de datos. Desafortunadamente el hash de la contraseña del usuario (admin) morty no es visible, pero también está registrado como Usuario de la Tienda y ahí puedo coger su hash de contraseña.
-![](https://404zzero.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250212124532.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250212124532.png)
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250212124638.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250212124638.png)
 
 tenemos el hahs y lo procedemos a romper con hashcat
 
@@ -243,14 +243,14 @@ pbkdf2_sha256$600000$y7K056G3KxbaRc40ioQE8j$e7bq8dE/U+yIiZ8isA0Dc0wuL0gYI3Gjmmdz
 
 ```
 y provamos a haceder por SSH
-![](https://404zzero.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250213165745.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250213165745.png)
 
 ejecuto linpheas.sh y veo algo curioso
-![](https://404zzero.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250213170400.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250213170400.png)
 hay un segundo usuario llamado alex
-![](https://404zzero.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250213170630.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250213170630.png)
 aparte esta ejecutando harvest
-![](https://404zzero.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250213171223.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250213171223.png)
 
 y el puerto de ejecucion es el 1337
 
@@ -259,7 +259,7 @@ podemos probar a aconectarnos de esta forma:
 harvest client 127.0.0.1
 ```
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250213171500.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250213171500.png)
 
 y nos salta esto
 
@@ -389,15 +389,15 @@ ssh -i id_rsa alex@10.10.11.9
 ```
 
 y estar dentro
-![](https://404zzero.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250215132635.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250215132635.png)
 ## root
 
 si vamos a /var/spool/mail veremos dos archivo interesantes:
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250215132845.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250215132845.png)
 
 si hacemos un cat al de alex veremos lo siguiente:
-![](https://404zzero.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250215133044.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250215133044.png)
 
 Antes de extraer el hash con zip2john decodifico el archivo adjunto codificado en base64 y lo paso a un archivo. Luego ejecuto john para intentar descifrar la contraseña. Eso tiene éxito y puedo descomprimir el archivo con realmadrid.
 ```bash
@@ -437,7 +437,7 @@ con esto podemos usar DockerRegistryGrabber para descargar imagenes
 python drg.py -U AlexMiles -P diamonds https://magicgardens.htb --dump magicgardens.htb
 ```
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250215140022.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250215140022.png)
 
 En lugar de revisar cada capa de manera individual, extraigo todas las capas en el directorio de salida para obtener el sistema de archivos completo de la imagen final. El orden adecuado se determina según la marca de tiempo de creación, como se mostró en el script Python anterior. Dentro de los archivos extraídos, es posible encontrar el código fuente de la aplicación, incluyendo su SECRET_KEY en un archivo de entorno.
 
@@ -503,10 +503,10 @@ requests.get("http://magicgardens.htb", cookies={"sessionid": new_cookie})
 
 ahora si ejecutamos este exploit y nos ponemos en escucha en el puesrto que emos especificado
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250215143719.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250215143719.png)
 
 vale vamos a ver las capavilitis del usuario:
-![](https://404zzero.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250215143958.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250215143958.png)
 
 El listado de capacidades revela el módulo cap_sys_module, que permite al contenedor cargar y descargar módulos del kernel.
 
@@ -550,10 +550,10 @@ clean:
 ```
 
 nos ponemos en eschucha y ejecutamos un make para que todo se cree
-![](https://404zzero.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250215144527.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250215144527.png)
 
 y por ultimo un insmod reverse-shell.ko para obtener la shell
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250215144847.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/MagicGardens/Pasted-image-20250215144847.png)
 
 y somos root
