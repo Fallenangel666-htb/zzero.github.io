@@ -5,7 +5,7 @@ excerpt:
 date: 2025-7-10
 classes: wide
 header:
-  teaser: https://404zzero.github.io/zzero.github.io//assets/images/proxy-image.png
+  teaser: https://fallenangel666-htb.github.io/zzero.github.io//assets/images/proxy-image.png
   teaser_home_page: true
 categories:
   - hacking
@@ -54,4 +54,4 @@ Y nada mas hackers que os valla bien.
 
 quiero un pato
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/CRTP.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/CRTP.png)
