@@ -71,7 +71,7 @@ date: 2019-02-15
 </style>
 
 <div class="container">
-  <img class="avatar" src="https://404zzero.github.io/zzero.github.io//assets/images/avatar7.jpg" alt="Avatar">
+  <img class="avatar" src="https://fallenangel666-htb.github.io/zzero.github.io//assets/images/avatar7.jpg" alt="Avatar">
   <div class="text-box">
     <p>Buenas, me llamo FallenAngel666 en las redes y soy un hacker ético español. Soy un entusiasta de la ciberseguridad, el hacking, el hardware y Linux en general. Llevo 6 años en este mundo (desde los 11 -12 años, tengo 18 actualmente :`3 ), empeze siendo blue team (me molan mazo los firewall) pero cuando descubri el red team al completo me enmaore <3 </p>
     <p>Actualmente estoy estudiando y, aparte, me estoy sacando por mi cuenta certificaciones de ciberseguridad. Básicamente paso mis días haciendo máquinas de Hack The Box.</p>
@@ -87,7 +87,7 @@ date: 2019-02-15
     <p>Mientras curso ASIR (porque, la verdad, se me hace muy fácil :3), aprovecho mi tiempo para estudiar y obtener certificaciones enfocadas al hacking. Actualmente estoy trabajando en el CRTO, CRTL y OSED (ya poseo el CRTP y, a día de hoy, tengo un 60 % del CRTO). (Realmente, todas son muy seguidas, de bastante calibre y con gran reconocimiento). (Aparte, a día de hoy, no me las saco por falta de dinero, para qué mentir)..</p>
     <p>Os muestro cómo es mi 'roadmap' de certificaciones, en caso de que todo me salga bien a la primera y disponga del dinero, claro.</p>
   </div>
-  <img class="cert-image" src="https://404zzero.github.io/zzero.github.io//assets/images/certsv3.png" alt="Certificaciones">
+  <img class="cert-image" src="https://fallenangel666-htb.github.io/zzero.github.io//assets/images/certsv3.png" alt="Certificaciones">
   <div class="text-box">
     <p>Ya un poco más sobre mis aficiones y demás: soy un loco del hardware y me encanta montar ordenadores de gama extrema y refrigeraciones líquidas custom. También soy fanático de la cultura asiática y nórdica.</p>
     <p>Y ya no sé qué más poner, así que... ¡HAPPY HACKING!</p>
