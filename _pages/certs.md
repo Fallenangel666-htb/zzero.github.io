@@ -16,7 +16,7 @@ date: 2025-02-15
   <div class="certificates-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 0 10px;">
     <!-- Certificado CRTP -->
     <div class="certificate-card" style="background-color: #1e1e1e; border: 2px solid #444; border-radius: 12px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); cursor: pointer;" data-image="https://api.eu.badgr.io/public/badges/Od2nC1yPRPaDC9UCJ8W7Lg/image?type=png&fmt=wide">
-      <img class="certificate-image" src="https://404zzero.github.io/zzero.github.io/assets/images/CRTP.png" alt="Certificado CRTP" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 2px solid #444;">
+      <img class="certificate-image" src="https://fallenangel666-htb.github.io/zzero.github.io/assets/images/CRTP.png" alt="Certificado CRTP" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 2px solid #444;">
       <div class="certificate-info" style="padding: 15px; text-align: left;">
         <h3 style="margin: 0 0 10px; font-size: 1.4em; color: #00ff00;">Certified Red Team Professional (CRTP)</h3>
         <p style="margin: 5px 0; color: #b0b0b0; font-size: 0.95em; font-style: italic;">Emitido por: Altered Security</p>
@@ -29,8 +29,8 @@ date: 2025-02-15
     <h2 style="text-align: center; font-size: 2em; color: #ffffff; margin-bottom: 20px;">Próximamente</h2>
     <div class="coming-soon-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 0 10px;">
       <!-- Certificado CRTO -->
-      <div class="certificate-card" style="background-color: #1e1e1e; border: 2px solid #444; border-radius: 12px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); cursor: pointer;" data-image="https://404zzero.github.io/zzero.github.io/assets/images/CRTO_logo.png">
-        <img class="certificate-image" src="https://404zzero.github.io/zzero.github.io/assets/images/CRTO_logo.png" alt="Logo CRTO (Próximamente)" style="width: 100%; height: 200px; object-fit: contain; border-bottom: 2px solid #444; opacity: 0.6; background-color: #1e1e1e;">
+      <div class="certificate-card" style="background-color: #1e1e1e; border: 2px solid #444; border-radius: 12px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); cursor: pointer;" data-image="https://fallenangel666-htb.github.io/zzero.github.io/assets/images/CRTO_logo.png">
+        <img class="certificate-image" src="https://fallenangel666-htb.github.io/zzero.github.io/assets/images/CRTO_logo.png" alt="Logo CRTO (Próximamente)" style="width: 100%; height: 200px; object-fit: contain; border-bottom: 2px solid #444; opacity: 0.6; background-color: #1e1e1e;">
         <div class="certificate-info" style="padding: 15px; text-align: left;">
           <h3 style="margin: 0 0 10px; font-size: 1.4em; color: #00ff00;">Certified Red Team Operator (CRTO)</h3>
           <p style="margin: 5px 0; color: #b0b0b0; font-size: 0.95em; font-style: italic;">Emitido por: Zero Point Security</p>
@@ -40,7 +40,7 @@ date: 2025-02-15
       </div>
       <!-- Certificado CRTL -->
       <div class="certificate-card" style="background-color: #1e1e1e; border: 2px solid #444; border-radius: 12px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); cursor: pointer;" data-image="https://www.bencteux.fr/img/rto-ii-logo.png">
-        <img class="certificate-image" src="https://404zzero.github.io/zzero.github.io/assets/images/CRTL_logo.png" alt="Logo CRTL (Próximamente)" style="width: 100%; height: 200px; object-fit: contain; border-bottom: 2px solid #444; opacity: 0.6; background-color: #1e1e1e;">
+        <img class="certificate-image" src="https://fallenangel666-htb.github.io/zzero.github.io/assets/images/CRTL_logo.png" alt="Logo CRTL (Próximamente)" style="width: 100%; height: 200px; object-fit: contain; border-bottom: 2px solid #444; opacity: 0.6; background-color: #1e1e1e;">
         <div class="certificate-info" style="padding: 15px; text-align: left;">
           <h3 style="margin: 0 0 10px; font-size: 1.4em; color: #00ff00;">Certified Red Team Lead (CRTL)</h3>
           <p style="margin: 5px 0; color: #b0b0b0; font-size: 0.95em; font-style: italic;">Emitido por: Proveedor de Certificación</p>
@@ -50,7 +50,7 @@ date: 2025-02-15
       </div>
       <!-- Certificado OSED -->
       <div class="certificate-card" style="background-color: #1e1e1e; border: 2px solid #444; border-radius: 12px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); cursor: pointer;" data-image="https://efigo.pl/wp-content/uploads/2024/10/OSED.XKmYW6Ds_ZGw05i.svg">
-        <img class="certificate-image" src="https://404zzero.github.io/zzero.github.io/assets/images/OSED_logo.png" alt="Logo OSED (Próximamente)" style="width: 100%; height: 200px; object-fit: contain; border-bottom: 2px solid #444; opacity: 0.6; background-color: #1e1e1e;">
+        <img class="certificate-image" src="https://fallenangel666-htb.github.io/zzero.github.io/assets/images/OSED_logo.png" alt="Logo OSED (Próximamente)" style="width: 100%; height: 200px; object-fit: contain; border-bottom: 2px solid #444; opacity: 0.6; background-color: #1e1e1e;">
         <div class="certificate-info" style="padding: 15px; text-align: left;">
           <h3 style="margin: 0 0 10px; font-size: 1.4em; color: #00ff00;">Offensive Security Exploit Developer (OSED)</h3>
           <p style="margin: 5px 0; color: #b0b0b0; font-size: 0.95em; font-style: italic;">Emitido por: Offensive Security</p>
@@ -62,7 +62,7 @@ date: 2025-02-15
   </div>
   <div class="preview-box" style="margin-top: 20px; padding: 15px; background-color: #252525; border-radius: 10px; border: 2px solid #444; text-align: center;">
     <h3 style="color: #ffffff; margin: 0 0 10px;">Vista Previa del Certificado</h3>
-    <img id="preview-image" src="https://404zzero.github.io/zzero.github.io/assets/images/CRTP.png" alt="Vista Previa del Certificado" style="max-width: 100%; border-radius: 8px; border: 1px solid #ccc;">
+    <img id="preview-image" src="https://fallenangel666-htb.github.io/zzero.github.io/assets/images/CRTP.png" alt="Vista Previa del Certificado" style="max-width: 100%; border-radius: 8px; border: 1px solid #ccc;">
   </div>
   <iframe data-testid="embed-iframe" style="border-radius:12px; margin-top: 20px;" src="https://open.spotify.com/embed/track/7kOkra1rvY27YDxUzZQ94c?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>
