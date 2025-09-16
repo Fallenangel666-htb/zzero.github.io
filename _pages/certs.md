@@ -3,8 +3,6 @@ title: "certs"
 permalink: /certs/
 date: 2025-02-15
 ---
-
-
 <div class="container" style="max-width: 1000px; margin: auto; padding: 40px 20px; color: #ffffff; font-family: Arial, sans-serif;">
   <div class="header" style="text-align: center; margin-bottom: 40px;">
     <h1 style="font-size: 2.5em; margin: 0; letter-spacing: 1px; background: linear-gradient(90deg, #00ff00, #9400d3); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Mis Certificados Profesionales</h1>
@@ -14,6 +12,16 @@ date: 2025-02-15
     Excelencia Certificada
   </div>
   <div class="certificates-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 0 10px;">
+    <!-- Certificado CRTO -->
+    <div class="certificate-card" style="background-color: #1e1e1e; border: 2px solid #444; border-radius: 12px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); cursor: pointer;" data-image="https://fallenangel666-htb.github.io/zzero.github.io/assets/images/CRTO_logo.png">
+      <img class="certificate-image" src="https://fallenangel666-htb.github.io/zzero.github.io/assets/images/CRTO.png" alt="certificado CRTO" style="width: 100%; height: 200px; object-fit: contain; border-bottom: 2px solid #444;">
+      <div class="certificate-info" style="padding: 15px; text-align: left;">
+        <h3 style="margin: 0 0 10px; font-size: 1.4em; color: #00ff00;">Certified Red Team Operator (CRTO)</h3>
+        <p style="margin: 5px 0; color: #b0b0b0; font-size: 0.95em; font-style: italic;">Emitido por: Zero Point Security</p>
+        <p style="margin: 5px 0; color: #b0b0b0; font-size: 0.95em;">Completado: Septiembre 2025</p>
+        <p style="margin: 5px 0; color: #b0b0b0; font-size: 0.95em;">Habilidades: Operaciones de Red Team, Tácticas Avanzadas de Penetración</p>
+      </div>
+    </div>
     <!-- Certificado CRTP -->
     <div class="certificate-card" style="background-color: #1e1e1e; border: 2px solid #444; border-radius: 12px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); cursor: pointer;" data-image="https://api.eu.badgr.io/public/badges/Od2nC1yPRPaDC9UCJ8W7Lg/image?type=png&fmt=wide">
       <img class="certificate-image" src="https://fallenangel666-htb.github.io/zzero.github.io/assets/images/CRTP.png" alt="Certificado CRTP" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 2px solid #444;">
@@ -28,16 +36,6 @@ date: 2025-02-15
   <div class="coming-soon-section" style="margin-top: 40px;">
     <h2 style="text-align: center; font-size: 2em; color: #ffffff; margin-bottom: 20px;">Próximamente</h2>
     <div class="coming-soon-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 0 10px;">
-      <!-- Certificado CRTO -->
-      <div class="certificate-card" style="background-color: #1e1e1e; border: 2px solid #444; border-radius: 12px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); cursor: pointer;" data-image="https://fallenangel666-htb.github.io/zzero.github.io/assets/images/CRTO_logo.png">
-        <img class="certificate-image" src="https://fallenangel666-htb.github.io/zzero.github.io/assets/images/CRTO.png" alt="certificado CRTO" style="width: 100%; height: 200px; object-fit: contain; border-bottom: 2px solid #444; opacity: 0.6; background-color: #1e1e1e;">
-        <div class="certificate-info" style="padding: 15px; text-align: left;">
-          <h3 style="margin: 0 0 10px; font-size: 1.4em; color: #00ff00;">Certified Red Team Operator (CRTO)</h3>
-          <p style="margin: 5px 0; color: #b0b0b0; font-size: 0.95em; font-style: italic;">Emitido por: Zero Point Security</p>
-          <p style="margin: 5px 0; color: #b0b0b0; font-size: 0.95em;">Completado: Septiembre 2025</p>
-          <p style="margin: 5px 0; color: #b0b0b0; font-size: 0.95em;">Habilidades: Operaciones de Red Team, Tácticas Avanzadas de Penetración</p>
-        </div>
-      </div>
       <!-- Certificado CRTL -->
       <div class="certificate-card" style="background-color: #1e1e1e; border: 2px solid #444; border-radius: 12px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); cursor: pointer;" data-image="https://www.bencteux.fr/img/rto-ii-logo.png">
         <img class="certificate-image" src="https://fallenangel666-htb.github.io/zzero.github.io/assets/images/CRTL_logo.png" alt="Logo CRTL (Próximamente)" style="width: 100%; height: 200px; object-fit: contain; border-bottom: 2px solid #444; opacity: 0.6; background-color: #1e1e1e;">
@@ -62,11 +60,10 @@ date: 2025-02-15
   </div>
   <div class="preview-box" style="margin-top: 20px; padding: 15px; background-color: #252525; border-radius: 10px; border: 2px solid #444; text-align: center;">
     <h3 style="color: #ffffff; margin: 0 0 10px;">Vista Previa del Certificado</h3>
-    <img id="preview-image" src="https://fallenangel666-htb.github.io/zzero.github.io/assets/images/CRTP.png" alt="Vista Previa del Certificado" style="max-width: 100%; border-radius: 8px; border: 1px solid #ccc;">
+    <img id="preview-image" src="https://fallenangel666-htb.github.io/zzero.github.io/assets/images/CRTO_logo.png" alt="Vista Previa del Certificado" style="max-width: 100%; border-radius: 8px; border: 1px solid #ccc;">
   </div>
   <iframe data-testid="embed-iframe" style="border-radius:12px; margin-top: 20px;" src="https://open.spotify.com/embed/track/7kOkra1rvY27YDxUzZQ94c?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>
-
 <style>
   body {
     background-color: #121212;
@@ -99,13 +96,11 @@ date: 2025-02-15
     }
   }
 </style>
-
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.certificate-card');
     const previewImage = document.getElementById('preview-image');
     const spotifyIframe = document.querySelector('iframe[data-testid="embed-iframe"]');
-
     // Certificate preview functionality
     cards.forEach(card => {
       card.addEventListener('click', () => {
@@ -114,7 +109,6 @@ date: 2025-02-15
         previewImage.alt = card.querySelector('.certificate-image').alt;
       });
     });
-
     // Trigger Spotify iframe autoplay
     if (spotifyIframe) {
       const playSpotify = () => {
