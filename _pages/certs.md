@@ -13,7 +13,7 @@ date: 2025-02-15
   </div>
   <div class="certificates-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 0 10px;">
     <!-- Certificado CRTO -->
-    <div class="certificate-card" style="background-color: #1e1e1e; border: 2px solid #444; border-radius: 12px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); cursor: pointer;" data-image="https://fallenangel666-htb.github.io/zzero.github.io/assets/images/CRTO_logo.png">
+    <div class="certificate-card" style="background-color: #1e1e1e; border: 2px solid #444; border-radius: 12px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); cursor: pointer;" data-image="https://fallenangel666-htb.github.io/zzero.github.io/assets/images/CRTO.png">
       <img class="certificate-image" src="https://fallenangel666-htb.github.io/zzero.github.io/assets/images/CRTO.png" alt="certificado CRTO" style="width: 100%; height: 200px; object-fit: contain; border-bottom: 2px solid #444;">
       <div class="certificate-info" style="padding: 15px; text-align: left;">
         <h3 style="margin: 0 0 10px; font-size: 1.4em; color: #00ff00;">Certified Red Team Operator (CRTO)</h3>
@@ -23,7 +23,7 @@ date: 2025-02-15
       </div>
     </div>
     <!-- Certificado CRTP -->
-    <div class="certificate-card" style="background-color: #1e1e1e; border: 2px solid #444; border-radius: 12px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); cursor: pointer;" data-image="https://api.eu.badgr.io/public/badges/Od2nC1yPRPaDC9UCJ8W7Lg/image?type=png&fmt=wide">
+    <div class="certificate-card" style="background-color: #1e1e1e; border: 2px solid #444; border-radius: 12px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); cursor: pointer;" data-image="https://fallenangel666-htb.github.io/zzero.github.io/assets/images/CRTP.png">
       <img class="certificate-image" src="https://fallenangel666-htb.github.io/zzero.github.io/assets/images/CRTP.png" alt="Certificado CRTP" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 2px solid #444;">
       <div class="certificate-info" style="padding: 15px; text-align: left;">
         <h3 style="margin: 0 0 10px; font-size: 1.4em; color: #00ff00;">Certified Red Team Professional (CRTP)</h3>
