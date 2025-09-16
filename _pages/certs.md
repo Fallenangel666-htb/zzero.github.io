@@ -30,11 +30,11 @@ date: 2025-02-15
     <div class="coming-soon-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 0 10px;">
       <!-- Certificado CRTO -->
       <div class="certificate-card" style="background-color: #1e1e1e; border: 2px solid #444; border-radius: 12px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); cursor: pointer;" data-image="https://fallenangel666-htb.github.io/zzero.github.io/assets/images/CRTO_logo.png">
-        <img class="certificate-image" src="https://fallenangel666-htb.github.io/zzero.github.io/assets/images/CRTO_logo.png" alt="Logo CRTO (Próximamente)" style="width: 100%; height: 200px; object-fit: contain; border-bottom: 2px solid #444; opacity: 0.6; background-color: #1e1e1e;">
+        <img class="certificate-image" src="https://fallenangel666-htb.github.io/zzero.github.io/assets/images/CRTO.png" alt="certificado CRTO" style="width: 100%; height: 200px; object-fit: contain; border-bottom: 2px solid #444; opacity: 0.6; background-color: #1e1e1e;">
         <div class="certificate-info" style="padding: 15px; text-align: left;">
           <h3 style="margin: 0 0 10px; font-size: 1.4em; color: #00ff00;">Certified Red Team Operator (CRTO)</h3>
           <p style="margin: 5px 0; color: #b0b0b0; font-size: 0.95em; font-style: italic;">Emitido por: Zero Point Security</p>
-          <p style="margin: 5px 0; color: #b0b0b0; font-size: 0.95em;">Estado: Próximamente</p>
+          <p style="margin: 5px 0; color: #b0b0b0; font-size: 0.95em;">Completado: Septiembre 2025</p>
           <p style="margin: 5px 0; color: #b0b0b0; font-size: 0.95em;">Habilidades: Operaciones de Red Team, Tácticas Avanzadas de Penetración</p>
         </div>
       </div>
