@@ -12,6 +12,7 @@ categories:
   - Linux
   - gitea
   - Pluck
+  - linux
   - git
   - crakear
   - RCE
