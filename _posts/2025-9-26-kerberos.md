@@ -5,7 +5,7 @@ excerpt:
 date: 2025-9-26
 classes: wide
 header:
-  teaser: https://upload.wikimedia.org/wikipedia/en/1/1e/Kerberos_protocol_logo.png
+  teaser: https://news.mit.edu/sites/default/files/download/200709/d200908311113015161.jpg
   teaser_home_page: true
 categories:
   - hacking
